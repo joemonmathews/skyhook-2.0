@@ -1,0 +1,25 @@
+
+.table {
+	  border-spacing: 0;
+	thead, tbody {
+		tr{
+			th, td {
+				vertical-align: middle;
+				border:none;
+				&:nth-last-child(1){
+				}
+			}
+		}
+	}
+	tbody {
+		tr {
+			td {
+				background:#fff;
+				&:nth-child(1){
+				}
+				&:nth-last-child(1){
+				}
+			}
+		}
+	}
+}
