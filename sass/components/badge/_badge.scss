@@ -2,6 +2,7 @@
 @import "../../utilities/style/textStyles";
 @import "../../utilities/utilities/sizes";
 @import "../../utilities/utilities/spaces";
+@import "../../utilities/utilities/borders";
 
 
 .pv-badge-wrap {
@@ -15,7 +16,7 @@
         color: $text-primary;
         text-align: center;
         // border-radius: $border-radius;
-        border-radius: 10px;
+        border-radius: $border-radius;
         height: map-get($pv-sizes, xsmall);
         min-width: map-get($pv-sizes, small); ;
         padding: 2px map-get($pv-spaces, small);
