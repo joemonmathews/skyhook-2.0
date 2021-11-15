@@ -1,0 +1,70 @@
+
+@import "../../utilities/style/colors";
+@import "../../utilities/style/textStyles";
+@import "../../utilities/utilities/sizes";
+
+
+@mixin avatar-base($size:(map-get($pv-sizes, xsmall))) {
+    @extend .pv-font-small;
+    color: $text-primary;
+    text-align: center;
+    height: map-get($pv-sizes, small);
+    width: map-get($pv-sizes, small);
+  }
+
+  .avatar {
+    @include avatar-base();    
+    display: table-cell;
+    
+    img {
+        border-radius: $border-radius;
+        vertical-align: middle;
+    }
+  
+    &.avatar-small {
+      @include avatar-base(map-get($pv-sizes, xsmall));
+
+      img {
+        height: map-get($pv-sizes, xsmall);
+        width: map-get($pv-sizes, xsmall); 
+      }
+
+    }
+
+    &.avatar-medium {
+        @include avatar-base(map-get($pv-sizes, small));
+
+        img {
+            width: 26px;
+            height: 26px;
+        }
+    }
+
+    &.avatar-large {
+      @include avatar-base(map-get($pv-sizes, large));
+
+      img {
+        height: map-get($pv-sizes, small);
+        width: map-get($pv-sizes, small); 
+      }
+    }
+
+    // &.avatar-xlarge {
+    //   @include avatar-base(map-get($pv-sizes, xlarge));
+    // }
+  
+    img {
+      border-radius: $border-radius;
+      height: 100%;
+      position: relative;
+      width: 100%;
+    }
+  
+    // &[data-initial]::before {
+
+    // }
+  }
+
+
+
+  

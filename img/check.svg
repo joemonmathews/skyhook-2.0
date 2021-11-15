@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Artboard</title>
+    <defs>
+        <path d="M5.278425,8.54178 C5.147925,8.54178 5.022675,8.49078 4.928925,8.40003 L2.400675,5.93328 C2.202675,5.74128 2.199675,5.42478 2.391675,5.22678 C2.584425,5.02953 2.901675,5.02503 3.098925,5.21778 L5.242425,7.30803 L8.719425,3.17778 C8.897175,2.96628 9.212925,2.94003 9.423675,3.11778 C9.635175,3.29553 9.662175,3.61053 9.484425,3.82203 L5.660925,8.36403 C5.571675,8.46978 5.441925,8.53428 5.302425,8.54103 C5.294175,8.54178 5.286675,8.54178 5.278425,8.54178" id="path-1"></path>
+    </defs>
+    <g id="Artboard" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="UI-Kit/icon/xsmall">
+            <g id="Utilities/Icons/checkmark" transform="translate(2.000000, 2.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="checkmark" fill="#999999" fill-rule="evenodd" xlink:href="#path-1"></use>
+                <g id="Utilities/Colors/Icons/Icon-normal" mask="url(#mask-2)" fill="#999999" fill-rule="evenodd">
+                    <g id="Utilities/Colors/Filled/grayscales/pp-grayscale-3">
+                        <rect id="Rectangle" x="0" y="0" width="12" height="12"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

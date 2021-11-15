@@ -1,0 +1,19 @@
+
+
+
+$pv-sizes: (
+    'xxsmall': 6px,
+    'xsmall': 16px,
+    'small': 36px,
+    'medium': 46px,
+    'large': 92px,
+    // 'xlarge': ,
+    // 'xxlarge': ,
+    // 'jumbo': 
+  );
+
+// usage
+
+// .demo {
+//   width: map-get($pv-sizes, large)
+// }

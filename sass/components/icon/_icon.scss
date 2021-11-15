@@ -1,0 +1,9 @@
+@import "../../utilities/utilities/sizes";
+@import "../../utilities/style/colors";
+
+
+.icon-container-medium {
+    height: map-get($pv-sizes, medium);
+    width: map-get($pv-sizes, medium);
+    background: $pv-red-dark;
+}

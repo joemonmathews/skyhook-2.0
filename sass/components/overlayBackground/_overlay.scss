@@ -1,0 +1,14 @@
+
+@import "../../utilities/style/colors";
+
+
+.pv-overlay {
+    background: rgba($pv-grayscale-1, .75);
+    bottom: 0;
+    cursor: default;
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }

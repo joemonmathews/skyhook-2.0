@@ -1,0 +1,77 @@
+@import "../../utilities/style/colors";
+@import "../../utilities/style/textStyles";
+@import "../../utilities/utilities/sizes";
+@import "../../utilities/utilities/shadows";
+@import "../../utilities/utilities/borders";
+
+.modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background: rgba($pv-grayscale-1, .75);
+  
+    &:target,
+    &.active {
+      display: flex;
+      opacity: 1;
+      z-index: 100;
+    }
+
+    .modal-container {
+        @include box-shadow-regular;
+        background: $pv-white;
+        border-radius: $base-border-radius;
+        display: flex;
+        flex-direction: column;
+        animation: slide-down .2s ease 1;
+        width: 380px; //default width
+
+        &.small {
+            width: 380px; // duplicate
+        }
+        &.medium {
+            width: 500px;
+        }
+        &.large {
+            width: 720px;
+        }
+        &.small, &.medium, &.large {
+            min-height: 190px;
+        }
+       
+      
+        .modal-header {
+          color: $pv-grayscale-1;
+          padding: map-get($pv-spaces, medium);
+          @extend .pv-font-h1;
+          height: map-get($pv-sizes, medium);
+          align-items: center;
+          display: flex;
+
+          &.destructive {
+              color: $pv-red-regular;
+          }
+
+        }
+      
+        .modal-body {
+          overflow-y: auto;
+          min-height: 100px;
+          padding: map-get($pv-spaces, medium);
+          position: relative;
+        }
+      
+        .modal-footer {
+          padding: map-get($pv-spaces, medium);
+          text-align: right;
+        }
+      }
+
+}

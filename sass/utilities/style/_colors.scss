@@ -1,0 +1,112 @@
+
+//  ========================== COLORS =====================================
+
+/* -- Color green --  */
+
+$pv-green-regular: #8AB98E;
+$pv-green-light: #DEEFE0;
+$pv-green-dark: #5E8962;
+
+
+/* -- Color blue --  */
+
+$pv-blue-regular: #608EB6;
+$pv-blue-light: #DDE8F2;
+$pv-blue-dark: #375875;
+
+/* -- Color red --  */
+
+$pv-red-regular: #D56261;
+$pv-red-light: #F9E6E5;
+$pv-red-dark: #A93333;
+
+/* -- Color yellow --  */
+
+$pv-yellow-regular: #FADA67;
+$pv-yellow-light: #FFF5D2;
+$pv-yellow-dark: #DBB926;
+
+/* -- Color lilac --  */
+
+$pv-lilac-regular: #BA8AA4;
+$pv-lilac-light: #E8D7E0;
+$pv-lilac-dark: #9A547A;
+
+/* -- Color orange --  */
+
+$pv-orange-regular: #FBAF5D;
+$pv-orange-light: #FFEFDD;
+$pv-orange-dark: #C77722;
+
+/* -- Color grayscales --  */
+
+$pv-grayscale-1: #222222;
+$pv-grayscale-2: #777777;
+$pv-grayscale-3: #999999;
+$pv-grayscale-4: #CCCCCC;
+$pv-grayscale-5: #DDDDDD;
+$pv-grayscale-6: #EEEEEE;
+$pv-grayscale-7: #F5F5F5;
+
+/* -- Color white --  */
+
+$pv-white: #ffffff;
+
+/* -- Color navy --  */
+
+$pv-navy: #1F2532;
+
+
+/* -- Color navy --  */
+
+$pv-navy: #1F2532;
+
+
+
+// ===========================================
+
+
+%icon-normal {
+    fill: $pv-grayscale-3;
+
+    &:hover {
+        fill: $pv-grayscale-2
+    }
+    
+}
+
+%icon-active {
+    fill: $pv-green-regular;
+
+    &:hover {
+        fill: $pv-green-regular
+    }
+    
+}
+
+%icon-inverse {
+    fill: $pv-white;
+
+    &:hover {
+        fill: $pv-white;
+    }
+    
+}
+
+%icon-alert {
+    fill: $pv-red-regular;
+
+    &:hover {
+        fill: $pv-red-regular
+    }
+    
+}
+
+%icon-warning {
+    fill: $pv-orange-regular;
+
+    &:hover {
+        fill: $pv-orange-regular
+    }
+    
+}

@@ -1,0 +1,20 @@
+@import "../style/colors";
+
+@mixin opacity ( $value: 0.5 ) {
+    opacity: $value;
+    filter: alpha(opacity= $value * 100 );
+    zoom: 1;
+  }
+  
+.opacity {
+    @include opacity(0.5);
+}
+
+.focus {
+  border: 2px solid $pv-blue-regular;
+
+  &.error {
+    border: 2px solid $pv-red-regular;
+  }
+  
+}

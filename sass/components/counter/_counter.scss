@@ -1,0 +1,25 @@
+@import "../../utilities/style/colors";
+@import "../../utilities/style/textStyles";
+@import "../../utilities/utilities/sizes";
+@import "../../utilities/utilities/borders";
+
+
+.pv-counter {
+    @extend .pv-font-small;
+    color: $pv-white;
+    text-align: center;
+    border-radius: $border-radius;
+    width: map-get($pv-sizes, xsmall);
+    height: map-get($pv-sizes, xsmall);
+    padding-top: 3px;
+    display: inline-block;
+
+    &.primary {
+        background: $pv-green-regular;
+    }
+    &.critical {
+        background: $pv-red-regular;
+    }
+
+}
+

@@ -1,0 +1,53 @@
+
+@import "../../utilities/style/colors";
+
+
+
+// Radius
+
+$border-radius: 50%;
+
+$base-border-radius: 2px;
+
+
+
+@mixin pv-border {
+    border: 1px solid;
+}
+
+@mixin pv-border-dashed {
+    border: 1px dashed;
+}
+
+
+
+.border-normal {
+    border-color: $pv-grayscale-3;
+
+    &:hover {
+        border-color: $pv-grayscale-1;
+    }
+    &:active {
+        border-color: $pv-green-regular;
+    }
+	&.error {
+        border-color: $pv-red-regular;
+    }
+
+}
+
+.border-light {
+    border-color: $pv-grayscale-5;
+
+    &:hover {
+        border-color: $pv-grayscale-1;
+    }
+    &:active {
+        border-color: $pv-green-regular;
+    }
+	&.error {
+        border-color: $pv-red-regular;
+    }
+
+}
+

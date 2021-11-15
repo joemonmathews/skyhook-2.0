@@ -1,0 +1,26 @@
+@import "../../utilities/style/colors";
+@import "../../utilities/style/textStyles";
+@import "../../utilities/utilities/sizes";
+@import "../../utilities/utilities/spaces";
+
+
+.pv-badge-wrap {
+
+    height: map-get($pv-sizes, small);
+
+    .pv-badge {
+
+        background: $pv-grayscale-5;
+        @extend .pv-font-small;
+        color: $text-primary;
+        text-align: center;
+        // border-radius: $border-radius;
+        border-radius: 10px;
+        height: map-get($pv-sizes, xsmall);
+        min-width: map-get($pv-sizes, small); ;
+        padding: 2px map-get($pv-spaces, small);
+        display: inline-block;
+        vertical-align: baseline;
+
+    }
+}

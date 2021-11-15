@@ -1,0 +1,36 @@
+
+
+.pv-message-center {
+
+    width: auto;
+    height: map-get($pv-sizes, medium);
+    background: $pv-white;
+    display: flex;
+    @include box-shadow-regular;
+
+    width: 400px;
+    margin: 0 auto;
+
+    .icon-container-medium {
+        display: inline-block;
+    }
+
+    &.success {
+        .icon-container-medium {
+            background: $pv-green-dark;
+        }
+    }
+
+    &.error {
+        .icon-container-medium {
+            background: $pv-red-dark;
+        }
+    }
+
+    .message {
+        display: inline-block;
+        line-height: map-get($pv-sizes, medium);
+        padding: 0 map-get($pv-spaces, small );
+    }
+
+}

@@ -1,0 +1,61 @@
+
+@import "../../utilities/utilities/sizes";
+@import "../../utilities/style/textStyles";
+@import "../../utilities/utilities/borders";
+
+
+.pv-checkbox {
+
+    position: relative;
+    width: auto;
+    height: map-get($pv-sizes, small);
+    min-width: map-get($pv-sizes, small);
+    display: flex;
+    align-items: center;
+}
+
+
+    .pv-checkbox-wrapper {
+        width: 36px;
+        height: 36px;
+        padding: 9px;
+
+        .checkbox {
+            background: $pv-white;
+            @include pv-border;
+            border-radius: $base-border-radius;
+            border-color: $pv-grayscale-3;
+            width: map-get($pv-sizes, xsmall);
+            height: map-get($pv-sizes, xsmall);
+
+            svg {
+                fill: $pv-white;
+                vertical-align: top;
+            }
+
+            &.selected {
+                background: $pv-green-regular;
+                border-color: $pv-green-regular;
+                path {
+                    fill: $pv-white;
+                }
+            }
+
+        }
+
+    }
+
+    .pv-checkbox-label {
+        @extend .pv-font-regular;
+        color: $text-primary;
+    }
+
+
+input[type="checkbox"] {
+    display: none;
+
+}
+
+
+
+
