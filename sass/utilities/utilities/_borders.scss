@@ -22,6 +22,7 @@ $base-border-radius: 2px;
 
 
 .border-normal {
+    @include pv-border();
     border-color: $pv-grayscale-3;
 
     &:hover {
@@ -37,6 +38,7 @@ $base-border-radius: 2px;
 }
 
 .border-light {
+    @include pv-border();
     border-color: $pv-grayscale-5;
 
     &:hover {

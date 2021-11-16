@@ -482,6 +482,7 @@ li::before {
 /* -- Color navy --  */
 /* -- Color navy --  */
 .border-normal {
+  border: 1px solid;
   border-color: #999999;
 }
 
@@ -498,6 +499,7 @@ li::before {
 }
 
 .border-light {
+  border: 1px solid;
   border-color: #DDDDDD;
 }
 
@@ -790,6 +792,7 @@ fieldset[disabled] .pv-button-ghost:active {
 /* -- Color navy --  */
 /* -- Color navy --  */
 .border-normal {
+  border: 1px solid;
   border-color: #999999;
 }
 
@@ -806,6 +809,7 @@ fieldset[disabled] .pv-button-ghost:active {
 }
 
 .border-light {
+  border: 1px solid;
   border-color: #DDDDDD;
 }
 
@@ -904,6 +908,7 @@ fieldset[disabled] .pv-button-ghost:active {
 /* -- Color navy --  */
 /* -- Color navy --  */
 .border-normal {
+  border: 1px solid;
   border-color: #999999;
 }
 
@@ -920,6 +925,7 @@ fieldset[disabled] .pv-button-ghost:active {
 }
 
 .border-light {
+  border: 1px solid;
   border-color: #DDDDDD;
 }
 
@@ -1168,6 +1174,7 @@ fieldset[disabled] .pv-button-ghost:active {
 /* -- Color navy --  */
 /* -- Color navy --  */
 .border-normal {
+  border: 1px solid;
   border-color: #999999;
 }
 
@@ -1184,6 +1191,7 @@ fieldset[disabled] .pv-button-ghost:active {
 }
 
 .border-light {
+  border: 1px solid;
   border-color: #DDDDDD;
 }
 
@@ -1392,6 +1400,7 @@ input[type="checkbox"] {
 /* -- Color navy --  */
 /* -- Color navy --  */
 .border-normal {
+  border: 1px solid;
   border-color: #999999;
 }
 
@@ -1408,6 +1417,7 @@ input[type="checkbox"] {
 }
 
 .border-light {
+  border: 1px solid;
   border-color: #DDDDDD;
 }
 
@@ -1441,30 +1451,136 @@ input[type="checkbox"] {
   background: #D56261;
 }
 
-.dropdown {
+/* -- Color green --  */
+/* -- Color blue --  */
+/* -- Color red --  */
+/* -- Color yellow --  */
+/* -- Color lilac --  */
+/* -- Color orange --  */
+/* -- Color grayscales --  */
+/* -- Color white --  */
+/* -- Color navy --  */
+/* -- Color navy --  */
+.pv-font-h1, .modal .modal-container .modal-header {
+  font-size: 18px;
+}
+
+.pv-font-h2 {
+  font-size: 16px;
+}
+
+.pv-font-title {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.pv-font-small, .avatar, .avatar.avatar-small, .avatar.avatar-medium, .avatar.avatar-large, .pv-badge-wrap .pv-badge, .pv-counter {
+  font-size: 11px;
+}
+
+.pv-font-regular, .pv-checkbox-label {
+  font-size: 13px;
+  color: #222222;
+}
+
+.pv-font-semibold {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.pv-font-medium {
+  font-size: 16px;
+}
+
+.pv-font-medium {
+  font-size: 18px;
+}
+
+/* -- Color green --  */
+/* -- Color blue --  */
+/* -- Color red --  */
+/* -- Color yellow --  */
+/* -- Color lilac --  */
+/* -- Color orange --  */
+/* -- Color grayscales --  */
+/* -- Color white --  */
+/* -- Color navy --  */
+/* -- Color navy --  */
+.border-normal {
+  border: 1px solid;
+  border-color: #999999;
+}
+
+.border-normal:hover {
+  border-color: #222222;
+}
+
+.border-normal:active {
+  border-color: #8AB98E;
+}
+
+.border-normal.error {
+  border-color: #D56261;
+}
+
+.border-light {
+  border: 1px solid;
+  border-color: #DDDDDD;
+}
+
+.border-light:hover {
+  border-color: #222222;
+}
+
+.border-light:active {
+  border-color: #8AB98E;
+}
+
+.border-light.error {
+  border-color: #D56261;
+}
+
+/* -- Color green --  */
+/* -- Color blue --  */
+/* -- Color red --  */
+/* -- Color yellow --  */
+/* -- Color lilac --  */
+/* -- Color orange --  */
+/* -- Color grayscales --  */
+/* -- Color white --  */
+/* -- Color navy --  */
+/* -- Color navy --  */
+.dropdown-menu {
+  display: none;
+  min-width: 160px;
+  position: absolute;
+  top: 100%;
+  z-index: 100;
+}
+
+.dropdown-menu .dropdown-list {
+  display: block;
+  line-height: 36px;
+  padding: 10px;
   position: relative;
 }
 
-.dropdown .menu {
-  -webkit-animation: slide-down .15s ease 1;
-          animation: slide-down .15s ease 1;
-  display: none;
-  left: 0;
-  max-height: 460px;
-  overflow-y: auto;
-  position: absolute;
-  top: 100%;
+.dropdown-menu .dropdown-list:focus, .dropdown-menu .dropdown-list:active {
+  background-color: #DEEFE0;
 }
 
-.dropdown.dropdown-right .menu {
-  left: auto;
-  right: 0;
+.dropdown-menu .dropdown-list:hover {
+  background-color: #F5F5F5;
+  cursor: pointer;
 }
 
-.dropdown.active .menu,
-.dropdown .dropdown-toggle:focus + .menu,
-.dropdown .menu:hover {
-  display: block;
+.dropdown-menu .dropdown-list.is-disabled {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  zoom: 1;
+  pointer-events: none;
+  background-color: transparent;
 }
 
 /* -- Color green --  */
@@ -1581,6 +1697,7 @@ input[type="checkbox"] {
 /* -- Color navy --  */
 /* -- Color navy --  */
 .border-normal {
+  border: 1px solid;
   border-color: #999999;
 }
 
@@ -1597,6 +1714,7 @@ input[type="checkbox"] {
 }
 
 .border-light {
+  border: 1px solid;
   border-color: #DDDDDD;
 }
 

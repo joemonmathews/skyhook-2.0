@@ -1,27 +1,49 @@
-.dropdown {
+@import "../../utilities/utilities/sizes";
+@import "../../utilities/style/textStyles";
+@import "../../utilities/utilities/borders";
+@import "../../utilities/utilities/shadows";
+@import "../../utilities/utilities/spaces";
+@import "../../utilities/style/colors";
+
+
+
+
+$dropdown-menu-min-width: 160px;
+$dropdown-menu-max-width: 460px;
+
+$dropdown-menu-min-height: map-get($pv-sizes, small);
+
+
+.dropdown-menu {
+  display: none;
+  min-width: $dropdown-menu-min-width;
+  position: absolute;
+  top: 100%;
+  z-index:100; // #todo
+
+  .dropdown-list {
+    display: block;
+    line-height: map-get($pv-sizes, small);
+    padding: map-get($pv-spaces, small);
     position: relative;
-  
-    .menu {
-      animation: slide-down .15s ease 1;
-      display: none;
-      left: 0;
-      max-height: 460px;
-      overflow-y: auto;
-      position: absolute;
-      top: 100%;
+
+    &:focus,
+    &:active {
+      background-color: $pv-green-light;
     }
-  
-    &.dropdown-right {
-      .menu {
-        left: auto;
-        right: 0;
-      }
+
+    &:hover {
+      background-color: $pv-grayscale-7;
+      cursor: pointer; // #todo
     }
-  
-    &.active .menu,
-    .dropdown-toggle:focus + .menu,
-    .menu:hover {
-      display: block;
+
+    &.is-disabled {
+      @include opacity(0.5);
+      pointer-events: none;
+      background-color: transparent;
     }
-  
+
+  }
+
 }
+
