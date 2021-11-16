@@ -481,23 +481,6 @@ li::before {
 /* -- Color white --  */
 /* -- Color navy --  */
 /* -- Color navy --  */
-.border-normal {
-  border: 1px solid;
-  border-color: #999999;
-}
-
-.border-normal:hover {
-  border-color: #222222;
-}
-
-.border-normal:active {
-  border-color: #8AB98E;
-}
-
-.border-normal.error {
-  border-color: #D56261;
-}
-
 .border-light {
   border: 1px solid;
   border-color: #DDDDDD;
@@ -535,7 +518,7 @@ fieldset[disabled] .pv-button-naked-inverse:active, .pv-button-ghost[disabled], 
 fieldset[disabled] .pv-button-ghost,
 fieldset[disabled] .pv-button-ghost:hover,
 fieldset[disabled] .pv-button-ghost:focus,
-fieldset[disabled] .pv-button-ghost:active {
+fieldset[disabled] .pv-button-ghost:active, .input[disabled]:hover, .input[disabled]:focus, .input[disabled]:active {
   cursor: pointer;
 }
 
@@ -791,23 +774,6 @@ fieldset[disabled] .pv-button-ghost:active {
 /* -- Color white --  */
 /* -- Color navy --  */
 /* -- Color navy --  */
-.border-normal {
-  border: 1px solid;
-  border-color: #999999;
-}
-
-.border-normal:hover {
-  border-color: #222222;
-}
-
-.border-normal:active {
-  border-color: #8AB98E;
-}
-
-.border-normal.error {
-  border-color: #D56261;
-}
-
 .border-light {
   border: 1px solid;
   border-color: #DDDDDD;
@@ -833,8 +799,8 @@ fieldset[disabled] .pv-button-ghost:active {
   background: #DDDDDD;
   color: #222222;
   text-align: center;
-  border-radius: 50%;
-  height: 16px;
+  line-height: 16px;
+  border-radius: 8px;
   min-width: 36px;
   padding: 2px 10px;
   display: inline-block;
@@ -861,7 +827,7 @@ fieldset[disabled] .pv-button-naked-inverse:active, .pv-button-ghost[disabled], 
 fieldset[disabled] .pv-button-ghost,
 fieldset[disabled] .pv-button-ghost:hover,
 fieldset[disabled] .pv-button-ghost:focus,
-fieldset[disabled] .pv-button-ghost:active {
+fieldset[disabled] .pv-button-ghost:active, .input[disabled]:hover, .input[disabled]:focus, .input[disabled]:active {
   cursor: pointer;
 }
 
@@ -907,23 +873,6 @@ fieldset[disabled] .pv-button-ghost:active {
 /* -- Color white --  */
 /* -- Color navy --  */
 /* -- Color navy --  */
-.border-normal {
-  border: 1px solid;
-  border-color: #999999;
-}
-
-.border-normal:hover {
-  border-color: #222222;
-}
-
-.border-normal:active {
-  border-color: #8AB98E;
-}
-
-.border-normal.error {
-  border-color: #D56261;
-}
-
 .border-light {
   border: 1px solid;
   border-color: #DDDDDD;
@@ -1173,23 +1122,6 @@ fieldset[disabled] .pv-button-ghost:active {
 /* -- Color white --  */
 /* -- Color navy --  */
 /* -- Color navy --  */
-.border-normal {
-  border: 1px solid;
-  border-color: #999999;
-}
-
-.border-normal:hover {
-  border-color: #222222;
-}
-
-.border-normal:active {
-  border-color: #8AB98E;
-}
-
-.border-normal.error {
-  border-color: #D56261;
-}
-
 .border-light {
   border: 1px solid;
   border-color: #DDDDDD;
@@ -1399,23 +1331,6 @@ input[type="checkbox"] {
 /* -- Color white --  */
 /* -- Color navy --  */
 /* -- Color navy --  */
-.border-normal {
-  border: 1px solid;
-  border-color: #999999;
-}
-
-.border-normal:hover {
-  border-color: #222222;
-}
-
-.border-normal:active {
-  border-color: #8AB98E;
-}
-
-.border-normal.error {
-  border-color: #D56261;
-}
-
 .border-light {
   border: 1px solid;
   border-color: #DDDDDD;
@@ -1507,23 +1422,6 @@ input[type="checkbox"] {
 /* -- Color white --  */
 /* -- Color navy --  */
 /* -- Color navy --  */
-.border-normal {
-  border: 1px solid;
-  border-color: #999999;
-}
-
-.border-normal:hover {
-  border-color: #222222;
-}
-
-.border-normal:active {
-  border-color: #8AB98E;
-}
-
-.border-normal.error {
-  border-color: #D56261;
-}
-
 .border-light {
   border: 1px solid;
   border-color: #DDDDDD;
@@ -1552,21 +1450,20 @@ input[type="checkbox"] {
 /* -- Color navy --  */
 /* -- Color navy --  */
 .dropdown-menu {
-  display: none;
   min-width: 160px;
-  position: absolute;
-  top: 100%;
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.2);
   z-index: 100;
 }
 
 .dropdown-menu .dropdown-list {
   display: block;
   line-height: 36px;
-  padding: 10px;
+  padding: 0 10px;
   position: relative;
 }
 
-.dropdown-menu .dropdown-list:focus, .dropdown-menu .dropdown-list:active {
+.dropdown-menu .dropdown-list:focus, .dropdown-menu .dropdown-list.is-active {
   background-color: #DEEFE0;
 }
 
@@ -1597,6 +1494,131 @@ input[type="checkbox"] {
   height: 46px;
   width: 46px;
   background: #A93333;
+}
+
+/* -- Color green --  */
+/* -- Color blue --  */
+/* -- Color red --  */
+/* -- Color yellow --  */
+/* -- Color lilac --  */
+/* -- Color orange --  */
+/* -- Color grayscales --  */
+/* -- Color white --  */
+/* -- Color navy --  */
+/* -- Color navy --  */
+.pv-font-h1, .modal .modal-container .modal-header {
+  font-size: 18px;
+}
+
+.pv-font-h2 {
+  font-size: 16px;
+}
+
+.pv-font-title {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.pv-font-small, .avatar, .avatar.avatar-small, .avatar.avatar-medium, .avatar.avatar-large, .pv-badge-wrap .pv-badge, .pv-counter {
+  font-size: 11px;
+}
+
+.pv-font-regular, .pv-checkbox-label {
+  font-size: 13px;
+  color: #222222;
+}
+
+.pv-font-semibold {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.pv-font-medium {
+  font-size: 16px;
+}
+
+.pv-font-medium {
+  font-size: 18px;
+}
+
+/* -- Color green --  */
+/* -- Color blue --  */
+/* -- Color red --  */
+/* -- Color yellow --  */
+/* -- Color lilac --  */
+/* -- Color orange --  */
+/* -- Color grayscales --  */
+/* -- Color white --  */
+/* -- Color navy --  */
+/* -- Color navy --  */
+.border-light {
+  border: 1px solid;
+  border-color: #DDDDDD;
+}
+
+.border-light:hover {
+  border-color: #222222;
+}
+
+.border-light:active {
+  border-color: #8AB98E;
+}
+
+.border-light.error {
+  border-color: #D56261;
+}
+
+/* -- Color green --  */
+/* -- Color blue --  */
+/* -- Color red --  */
+/* -- Color yellow --  */
+/* -- Color lilac --  */
+/* -- Color orange --  */
+/* -- Color grayscales --  */
+/* -- Color white --  */
+/* -- Color navy --  */
+/* -- Color navy --  */
+.input {
+  width: 100%;
+  height: 36px;
+  padding: 10px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  text-align: left;
+  border: 1px solid;
+  border-color: #999999;
+}
+
+.input:hover {
+  border-color: #222222;
+}
+
+.input:active {
+  border-color: #8AB98E;
+}
+
+.input.error {
+  border-color: #D56261;
+}
+
+.input:hover {
+  border-color: #222222;
+}
+
+.input.is-focused, .input .is-focus-selected {
+  width: 100%;
+  height: auto;
+  outline: 2px solid #608EB6;
+}
+
+.input.is-focused.is-error, .input .is-focus-selected.is-error {
+  border-color: #D56261;
+}
+
+.input.is-error {
+  border: 1px solid;
+  border-color: #D56261;
 }
 
 .pv-message-center {
@@ -1696,23 +1718,6 @@ input[type="checkbox"] {
 /* -- Color white --  */
 /* -- Color navy --  */
 /* -- Color navy --  */
-.border-normal {
-  border: 1px solid;
-  border-color: #999999;
-}
-
-.border-normal:hover {
-  border-color: #222222;
-}
-
-.border-normal:active {
-  border-color: #8AB98E;
-}
-
-.border-normal.error {
-  border-color: #D56261;
-}
-
 .border-light {
   border: 1px solid;
   border-color: #DDDDDD;
@@ -1906,5 +1911,236 @@ input[type="checkbox"] {
 .pv-popover.left:hover .pv-popover-container {
   -webkit-transform: translate(-100%, -50%) scale(1);
           transform: translate(-100%, -50%) scale(1);
+}
+
+/* -- Color green --  */
+/* -- Color blue --  */
+/* -- Color red --  */
+/* -- Color yellow --  */
+/* -- Color lilac --  */
+/* -- Color orange --  */
+/* -- Color grayscales --  */
+/* -- Color white --  */
+/* -- Color navy --  */
+/* -- Color navy --  */
+.pv-font-h1, .modal .modal-container .modal-header {
+  font-size: 18px;
+}
+
+.pv-font-h2 {
+  font-size: 16px;
+}
+
+.pv-font-title {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.pv-font-small, .avatar, .avatar.avatar-small, .avatar.avatar-medium, .avatar.avatar-large, .pv-badge-wrap .pv-badge, .pv-counter {
+  font-size: 11px;
+}
+
+.pv-font-regular, .pv-checkbox-label {
+  font-size: 13px;
+  color: #222222;
+}
+
+.pv-font-semibold {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.pv-font-medium {
+  font-size: 16px;
+}
+
+.pv-font-medium {
+  font-size: 18px;
+}
+
+/* -- Color green --  */
+/* -- Color blue --  */
+/* -- Color red --  */
+/* -- Color yellow --  */
+/* -- Color lilac --  */
+/* -- Color orange --  */
+/* -- Color grayscales --  */
+/* -- Color white --  */
+/* -- Color navy --  */
+/* -- Color navy --  */
+.border-light {
+  border: 1px solid;
+  border-color: #DDDDDD;
+}
+
+.border-light:hover {
+  border-color: #222222;
+}
+
+.border-light:active {
+  border-color: #8AB98E;
+}
+
+.border-light.error {
+  border-color: #D56261;
+}
+
+/* -- Color green --  */
+/* -- Color blue --  */
+/* -- Color red --  */
+/* -- Color yellow --  */
+/* -- Color lilac --  */
+/* -- Color orange --  */
+/* -- Color grayscales --  */
+/* -- Color white --  */
+/* -- Color navy --  */
+/* -- Color navy --  */
+.tag {
+  line-height: 16px;
+  min-width: 36px;
+  padding: 0 10px;
+  border-radius: 18px;
+  font-size: 11px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #ffffff;
+  display: inline-block;
+}
+
+.tag.green {
+  background-color: #8AB98E;
+}
+
+.tag.blue {
+  background-color: #608EB6;
+}
+
+.tag.red {
+  background-color: #D56261;
+}
+
+.tag.yellow {
+  background-color: #FADA67;
+}
+
+.tag.lilac {
+  background-color: #BA8AA4;
+}
+
+.tag.orange {
+  background-color: #FBAF5D;
+}
+
+/* -- Color green --  */
+/* -- Color blue --  */
+/* -- Color red --  */
+/* -- Color yellow --  */
+/* -- Color lilac --  */
+/* -- Color orange --  */
+/* -- Color grayscales --  */
+/* -- Color white --  */
+/* -- Color navy --  */
+/* -- Color navy --  */
+.pv-font-h1, .modal .modal-container .modal-header {
+  font-size: 18px;
+}
+
+.pv-font-h2 {
+  font-size: 16px;
+}
+
+.pv-font-title {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.pv-font-small, .avatar, .avatar.avatar-small, .avatar.avatar-medium, .avatar.avatar-large, .pv-badge-wrap .pv-badge, .pv-counter {
+  font-size: 11px;
+}
+
+.pv-font-regular, .pv-checkbox-label {
+  font-size: 13px;
+  color: #222222;
+}
+
+.pv-font-semibold {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.pv-font-medium {
+  font-size: 16px;
+}
+
+.pv-font-medium {
+  font-size: 18px;
+}
+
+/* -- Color green --  */
+/* -- Color blue --  */
+/* -- Color red --  */
+/* -- Color yellow --  */
+/* -- Color lilac --  */
+/* -- Color orange --  */
+/* -- Color grayscales --  */
+/* -- Color white --  */
+/* -- Color navy --  */
+/* -- Color navy --  */
+.border-light {
+  border: 1px solid;
+  border-color: #DDDDDD;
+}
+
+.border-light:hover {
+  border-color: #222222;
+}
+
+.border-light:active {
+  border-color: #8AB98E;
+}
+
+.border-light.error {
+  border-color: #D56261;
+}
+
+/* -- Color green --  */
+/* -- Color blue --  */
+/* -- Color red --  */
+/* -- Color yellow --  */
+/* -- Color lilac --  */
+/* -- Color orange --  */
+/* -- Color grayscales --  */
+/* -- Color white --  */
+/* -- Color navy --  */
+/* -- Color navy --  */
+.textarea {
+  height: auto;
+  width: 100%;
+  min-height: 46px;
+  max-height: 300px;
+  overflow: scroll;
+  padding: 10px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  resize: none;
+  text-align: left;
+}
+
+.textarea.is-focused, .textarea .is-focus-selected {
+  width: 100%;
+  height: auto;
+  outline: 2px solid #608EB6;
+}
+
+.textarea.is-focused.is-error, .textarea .is-focus-selected.is-error {
+  border-color: #D56261;
+}
+
+.textarea.is-error {
+  border: 1px solid;
+  border-color: #D56261;
 }
 /*# sourceMappingURL=pvds.css.map */

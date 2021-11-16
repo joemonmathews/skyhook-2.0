@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*
    Table of Contents
    =============================================================================
@@ -72,7 +73,7 @@ audio:not([controls]) {
  *    user zoom.
  */
 html {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   /* 1 */
   -webkit-text-size-adjust: 100%;
   /* 2 */
@@ -185,7 +186,7 @@ pre {
  * Set consistent quote types.
  */
 q {
-  quotes: "\201C" "\201D" "\2018" "\2019";
+  quotes: "“" "”" "‘" "’";
 }
 
 /*
@@ -310,9 +311,9 @@ select {
  *    `input` and others.
  */
 button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
+html input[type=button],
+input[type=reset],
+input[type=submit] {
   -webkit-appearance: button;
   /* 2 */
   cursor: pointer;
@@ -331,8 +332,8 @@ html input[disabled] {
  * 1. Address box sizing set to `content-box` in IE 8/9.
  * 2. Remove excess padding in IE 8/9.
  */
-input[type="checkbox"],
-input[type="radio"] {
+input[type=checkbox],
+input[type=radio] {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   /* 1 */
@@ -345,7 +346,7 @@ input[type="radio"] {
  * 2. Address `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-input[type="text"], select {
+input[type=text], select {
   cursor: text;
   color: #4A4A4A;
   font-size: 13px;
@@ -356,8 +357,8 @@ input[type="text"], select {
  * Remove inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
@@ -406,7 +407,6 @@ ul, li {
 li {
   list-style-type: none;
 }
-
 li::before {
   margin: 0;
   padding: 0;
@@ -436,39 +436,62 @@ li::before {
 /* -- Color navy --  */
 /* -- Color navy --  */
 .pv-font-h1, .modal .modal-container .modal-header {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 18px;
+  line-height: 30px;
 }
 
 .pv-font-h2 {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 16px;
+  line-height: 26px;
 }
 
 .pv-font-title {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 12px;
+  line-height: normal;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
-.pv-font-small, .avatar, .avatar.avatar-small, .avatar.avatar-medium, .avatar.avatar-large, .pv-badge-wrap .pv-badge, .pv-counter {
+.pv-font-small, .pv-counter, .pv-badge-wrap .pv-badge, .avatar.avatar-large, .avatar.avatar-medium, .avatar.avatar-small, .avatar {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 11px;
+  line-height: normal;
 }
 
 .pv-font-regular, .pv-checkbox-label {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 13px;
+  line-height: normal;
   color: #222222;
 }
 
 .pv-font-semibold {
+  font-family: "proxima nova", "sans serif";
   font-size: 13px;
+  line-height: normal;
   font-weight: 600;
 }
 
 .pv-font-medium {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 16px;
+  line-height: 26px;
 }
 
 .pv-font-medium {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 18px;
+  line-height: 30px;
 }
 
 /* -- Color green --  */
@@ -482,64 +505,36 @@ li::before {
 /* -- Color navy --  */
 /* -- Color navy --  */
 .border-normal {
-  border: 1px solid;
   border-color: #999999;
 }
-
 .border-normal:hover {
   border-color: #222222;
 }
-
 .border-normal:active {
   border-color: #8AB98E;
 }
-
 .border-normal.error {
   border-color: #D56261;
 }
 
 .border-light {
-  border: 1px solid;
   border-color: #DDDDDD;
 }
-
 .border-light:hover {
   border-color: #222222;
 }
-
 .border-light:active {
   border-color: #8AB98E;
 }
-
 .border-light.error {
   border-color: #D56261;
 }
 
-.cursor-default, .pv-button-primary[disabled], .pv-button-primary[disabled]:hover, .pv-button-primary[disabled]:focus, .pv-button-primary[disabled]:active,
-fieldset[disabled] .pv-button-primary,
-fieldset[disabled] .pv-button-primary:hover,
-fieldset[disabled] .pv-button-primary:focus,
-fieldset[disabled] .pv-button-primary:active, .pv-button-destructive[disabled], .pv-button-destructive[disabled]:hover, .pv-button-destructive[disabled]:focus, .pv-button-destructive[disabled]:active,
-fieldset[disabled] .pv-button-destructive,
-fieldset[disabled] .pv-button-destructive:hover,
-fieldset[disabled] .pv-button-destructive:focus,
-fieldset[disabled] .pv-button-destructive:active, .pv-button-naked[disabled], .pv-button-naked[disabled]:hover, .pv-button-naked[disabled]:focus, .pv-button-naked[disabled]:active,
-fieldset[disabled] .pv-button-naked,
-fieldset[disabled] .pv-button-naked:hover,
-fieldset[disabled] .pv-button-naked:focus,
-fieldset[disabled] .pv-button-naked:active, .pv-button-naked-inverse[disabled], .pv-button-naked-inverse[disabled]:hover, .pv-button-naked-inverse[disabled]:focus, .pv-button-naked-inverse[disabled]:active,
-fieldset[disabled] .pv-button-naked-inverse,
-fieldset[disabled] .pv-button-naked-inverse:hover,
-fieldset[disabled] .pv-button-naked-inverse:focus,
-fieldset[disabled] .pv-button-naked-inverse:active, .pv-button-ghost[disabled], .pv-button-ghost[disabled]:hover, .pv-button-ghost[disabled]:focus, .pv-button-ghost[disabled]:active,
-fieldset[disabled] .pv-button-ghost,
-fieldset[disabled] .pv-button-ghost:hover,
-fieldset[disabled] .pv-button-ghost:focus,
-fieldset[disabled] .pv-button-ghost:active {
+.cursor-default, .pv-button-ghost[disabled], .pv-button-ghost[disabled]:hover, .pv-button-ghost[disabled]:focus, .pv-button-ghost[disabled]:active, fieldset[disabled] .pv-button-ghost, fieldset[disabled] .pv-button-ghost:hover, fieldset[disabled] .pv-button-ghost:focus, fieldset[disabled] .pv-button-ghost:active, .pv-button-naked-inverse[disabled], .pv-button-naked-inverse[disabled]:hover, .pv-button-naked-inverse[disabled]:focus, .pv-button-naked-inverse[disabled]:active, fieldset[disabled] .pv-button-naked-inverse, fieldset[disabled] .pv-button-naked-inverse:hover, fieldset[disabled] .pv-button-naked-inverse:focus, fieldset[disabled] .pv-button-naked-inverse:active, .pv-button-naked[disabled], .pv-button-naked[disabled]:hover, .pv-button-naked[disabled]:focus, .pv-button-naked[disabled]:active, fieldset[disabled] .pv-button-naked, fieldset[disabled] .pv-button-naked:hover, fieldset[disabled] .pv-button-naked:focus, fieldset[disabled] .pv-button-naked:active, .pv-button-destructive[disabled], .pv-button-destructive[disabled]:hover, .pv-button-destructive[disabled]:focus, .pv-button-destructive[disabled]:active, fieldset[disabled] .pv-button-destructive, fieldset[disabled] .pv-button-destructive:hover, fieldset[disabled] .pv-button-destructive:focus, fieldset[disabled] .pv-button-destructive:active, .pv-button-primary[disabled], .pv-button-primary[disabled]:hover, .pv-button-primary[disabled]:focus, .pv-button-primary[disabled]:active, fieldset[disabled] .pv-button-primary, fieldset[disabled] .pv-button-primary:hover, fieldset[disabled] .pv-button-primary:focus, fieldset[disabled] .pv-button-primary:active {
   cursor: pointer;
 }
 
-.cursor-pointer, .pv-button-primary, .pv-button-destructive, .pv-button-naked, .pv-button-naked-inverse, .pv-button-ghost {
+.cursor-pointer, .pv-button-ghost, .pv-button-naked-inverse, .pv-button-naked, .pv-button-destructive, .pv-button-primary {
   cursor: pointer;
 }
 
@@ -605,7 +600,6 @@ fieldset[disabled] .pv-button-ghost:active {
 .focus {
   border: 2px solid #608EB6;
 }
-
 .focus.error {
   border: 2px solid #D56261;
 }
@@ -634,39 +628,62 @@ fieldset[disabled] .pv-button-ghost:active {
 /* -- Color navy --  */
 /* -- Color navy --  */
 .pv-font-h1, .modal .modal-container .modal-header {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 18px;
+  line-height: 30px;
 }
 
 .pv-font-h2 {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 16px;
+  line-height: 26px;
 }
 
 .pv-font-title {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 12px;
+  line-height: normal;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
-.pv-font-small, .avatar, .avatar.avatar-small, .avatar.avatar-medium, .avatar.avatar-large, .pv-badge-wrap .pv-badge, .pv-counter {
+.pv-font-small, .pv-counter, .pv-badge-wrap .pv-badge, .avatar.avatar-large, .avatar.avatar-medium, .avatar.avatar-small, .avatar {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 11px;
+  line-height: normal;
 }
 
 .pv-font-regular, .pv-checkbox-label {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 13px;
+  line-height: normal;
   color: #222222;
 }
 
 .pv-font-semibold {
+  font-family: "proxima nova", "sans serif";
   font-size: 13px;
+  line-height: normal;
   font-weight: 600;
 }
 
 .pv-font-medium {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 16px;
+  line-height: 26px;
 }
 
 .pv-font-medium {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 18px;
+  line-height: 30px;
 }
 
 .avatar {
@@ -676,48 +693,40 @@ fieldset[disabled] .pv-button-ghost:active {
   width: 36px;
   display: table-cell;
 }
-
 .avatar img {
   border-radius: 50%;
   vertical-align: middle;
 }
-
 .avatar.avatar-small {
   color: #222222;
   text-align: center;
   height: 36px;
   width: 36px;
 }
-
 .avatar.avatar-small img {
   height: 16px;
   width: 16px;
 }
-
 .avatar.avatar-medium {
   color: #222222;
   text-align: center;
   height: 36px;
   width: 36px;
 }
-
 .avatar.avatar-medium img {
   width: 26px;
   height: 26px;
 }
-
 .avatar.avatar-large {
   color: #222222;
   text-align: center;
   height: 36px;
   width: 36px;
 }
-
 .avatar.avatar-large img {
   height: 36px;
   width: 36px;
 }
-
 .avatar img {
   border-radius: 50%;
   height: 100%;
@@ -746,94 +755,72 @@ fieldset[disabled] .pv-button-ghost:active {
 /* -- Color navy --  */
 /* -- Color navy --  */
 .pv-font-h1, .modal .modal-container .modal-header {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 18px;
+  line-height: 30px;
 }
 
 .pv-font-h2 {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 16px;
+  line-height: 26px;
 }
 
 .pv-font-title {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 12px;
+  line-height: normal;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
-.pv-font-small, .avatar, .avatar.avatar-small, .avatar.avatar-medium, .avatar.avatar-large, .pv-badge-wrap .pv-badge, .pv-counter {
+.pv-font-small, .pv-counter, .pv-badge-wrap .pv-badge, .avatar, .avatar.avatar-small, .avatar.avatar-medium, .avatar.avatar-large {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 11px;
+  line-height: normal;
 }
 
 .pv-font-regular, .pv-checkbox-label {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 13px;
+  line-height: normal;
   color: #222222;
 }
 
 .pv-font-semibold {
+  font-family: "proxima nova", "sans serif";
   font-size: 13px;
+  line-height: normal;
   font-weight: 600;
 }
 
 .pv-font-medium {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 16px;
+  line-height: 26px;
 }
 
 .pv-font-medium {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 18px;
-}
-
-/* -- Color green --  */
-/* -- Color blue --  */
-/* -- Color red --  */
-/* -- Color yellow --  */
-/* -- Color lilac --  */
-/* -- Color orange --  */
-/* -- Color grayscales --  */
-/* -- Color white --  */
-/* -- Color navy --  */
-/* -- Color navy --  */
-.border-normal {
-  border: 1px solid;
-  border-color: #999999;
-}
-
-.border-normal:hover {
-  border-color: #222222;
-}
-
-.border-normal:active {
-  border-color: #8AB98E;
-}
-
-.border-normal.error {
-  border-color: #D56261;
-}
-
-.border-light {
-  border: 1px solid;
-  border-color: #DDDDDD;
-}
-
-.border-light:hover {
-  border-color: #222222;
-}
-
-.border-light:active {
-  border-color: #8AB98E;
-}
-
-.border-light.error {
-  border-color: #D56261;
+  line-height: 30px;
 }
 
 .pv-badge-wrap {
   height: 36px;
 }
-
 .pv-badge-wrap .pv-badge {
   background: #DDDDDD;
   color: #222222;
   text-align: center;
-  border-radius: 50%;
+  border-radius: 10px;
   height: 16px;
   min-width: 36px;
   padding: 2px 10px;
@@ -841,31 +828,11 @@ fieldset[disabled] .pv-button-ghost:active {
   vertical-align: baseline;
 }
 
-.cursor-default, .pv-button-primary[disabled], .pv-button-primary[disabled]:hover, .pv-button-primary[disabled]:focus, .pv-button-primary[disabled]:active,
-fieldset[disabled] .pv-button-primary,
-fieldset[disabled] .pv-button-primary:hover,
-fieldset[disabled] .pv-button-primary:focus,
-fieldset[disabled] .pv-button-primary:active, .pv-button-destructive[disabled], .pv-button-destructive[disabled]:hover, .pv-button-destructive[disabled]:focus, .pv-button-destructive[disabled]:active,
-fieldset[disabled] .pv-button-destructive,
-fieldset[disabled] .pv-button-destructive:hover,
-fieldset[disabled] .pv-button-destructive:focus,
-fieldset[disabled] .pv-button-destructive:active, .pv-button-naked[disabled], .pv-button-naked[disabled]:hover, .pv-button-naked[disabled]:focus, .pv-button-naked[disabled]:active,
-fieldset[disabled] .pv-button-naked,
-fieldset[disabled] .pv-button-naked:hover,
-fieldset[disabled] .pv-button-naked:focus,
-fieldset[disabled] .pv-button-naked:active, .pv-button-naked-inverse[disabled], .pv-button-naked-inverse[disabled]:hover, .pv-button-naked-inverse[disabled]:focus, .pv-button-naked-inverse[disabled]:active,
-fieldset[disabled] .pv-button-naked-inverse,
-fieldset[disabled] .pv-button-naked-inverse:hover,
-fieldset[disabled] .pv-button-naked-inverse:focus,
-fieldset[disabled] .pv-button-naked-inverse:active, .pv-button-ghost[disabled], .pv-button-ghost[disabled]:hover, .pv-button-ghost[disabled]:focus, .pv-button-ghost[disabled]:active,
-fieldset[disabled] .pv-button-ghost,
-fieldset[disabled] .pv-button-ghost:hover,
-fieldset[disabled] .pv-button-ghost:focus,
-fieldset[disabled] .pv-button-ghost:active {
+.cursor-default, .pv-button-ghost[disabled], .pv-button-ghost[disabled]:hover, .pv-button-ghost[disabled]:focus, .pv-button-ghost[disabled]:active, fieldset[disabled] .pv-button-ghost, fieldset[disabled] .pv-button-ghost:hover, fieldset[disabled] .pv-button-ghost:focus, fieldset[disabled] .pv-button-ghost:active, .pv-button-naked-inverse[disabled], .pv-button-naked-inverse[disabled]:hover, .pv-button-naked-inverse[disabled]:focus, .pv-button-naked-inverse[disabled]:active, fieldset[disabled] .pv-button-naked-inverse, fieldset[disabled] .pv-button-naked-inverse:hover, fieldset[disabled] .pv-button-naked-inverse:focus, fieldset[disabled] .pv-button-naked-inverse:active, .pv-button-naked[disabled], .pv-button-naked[disabled]:hover, .pv-button-naked[disabled]:focus, .pv-button-naked[disabled]:active, fieldset[disabled] .pv-button-naked, fieldset[disabled] .pv-button-naked:hover, fieldset[disabled] .pv-button-naked:focus, fieldset[disabled] .pv-button-naked:active, .pv-button-destructive[disabled], .pv-button-destructive[disabled]:hover, .pv-button-destructive[disabled]:focus, .pv-button-destructive[disabled]:active, fieldset[disabled] .pv-button-destructive, fieldset[disabled] .pv-button-destructive:hover, fieldset[disabled] .pv-button-destructive:focus, fieldset[disabled] .pv-button-destructive:active, .pv-button-primary[disabled], .pv-button-primary[disabled]:hover, .pv-button-primary[disabled]:focus, .pv-button-primary[disabled]:active, fieldset[disabled] .pv-button-primary, fieldset[disabled] .pv-button-primary:hover, fieldset[disabled] .pv-button-primary:focus, fieldset[disabled] .pv-button-primary:active {
   cursor: pointer;
 }
 
-.cursor-pointer, .pv-button-primary, .pv-button-destructive, .pv-button-naked, .pv-button-naked-inverse, .pv-button-ghost {
+.cursor-pointer, .pv-button-ghost, .pv-button-naked-inverse, .pv-button-naked, .pv-button-destructive, .pv-button-primary {
   cursor: pointer;
 }
 
@@ -908,35 +875,27 @@ fieldset[disabled] .pv-button-ghost:active {
 /* -- Color navy --  */
 /* -- Color navy --  */
 .border-normal {
-  border: 1px solid;
   border-color: #999999;
 }
-
 .border-normal:hover {
   border-color: #222222;
 }
-
 .border-normal:active {
   border-color: #8AB98E;
 }
-
 .border-normal.error {
   border-color: #D56261;
 }
 
 .border-light {
-  border: 1px solid;
   border-color: #DDDDDD;
 }
-
 .border-light:hover {
   border-color: #222222;
 }
-
 .border-light:active {
   border-color: #8AB98E;
 }
-
 .border-light.error {
   border-color: #D56261;
 }
@@ -949,29 +908,23 @@ fieldset[disabled] .pv-button-ghost:active {
   min-width: 36px;
   -webkit-box-shadow: none;
           box-shadow: none;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   vertical-align: middle;
   text-align: center;
   border: 1px solid;
   border-color: transparent;
 }
-
 .pv-button-primary:hover, .pv-button-primary:focus, .pv-button-primary:active {
   color: #ffffff;
   background-color: #538a57;
   border-color: #70aa75;
 }
-
-.pv-button-primary[disabled], .pv-button-primary[disabled]:hover, .pv-button-primary[disabled]:focus, .pv-button-primary[disabled]:active,
-fieldset[disabled] .pv-button-primary,
-fieldset[disabled] .pv-button-primary:hover,
-fieldset[disabled] .pv-button-primary:focus,
-fieldset[disabled] .pv-button-primary:active {
+.pv-button-primary[disabled], .pv-button-primary[disabled]:hover, .pv-button-primary[disabled]:focus, .pv-button-primary[disabled]:active, fieldset[disabled] .pv-button-primary, fieldset[disabled] .pv-button-primary:hover, fieldset[disabled] .pv-button-primary:focus, fieldset[disabled] .pv-button-primary:active {
   background-color: #cadfcc;
   border-color: #bdd8bf;
 }
-
 .pv-button-primary img, .pv-button-primary i {
   vertical-align: text-bottom;
 }
@@ -984,29 +937,23 @@ fieldset[disabled] .pv-button-primary:active {
   min-width: 36px;
   -webkit-box-shadow: none;
           box-shadow: none;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   vertical-align: middle;
   text-align: center;
   border: 1px solid;
   border-color: transparent;
 }
-
 .pv-button-destructive:hover, .pv-button-destructive:focus, .pv-button-destructive:active {
   color: #ffffff;
   background-color: #a42d2c;
   border-color: #cc4241;
 }
-
-.pv-button-destructive[disabled], .pv-button-destructive[disabled]:hover, .pv-button-destructive[disabled]:focus, .pv-button-destructive[disabled]:active,
-fieldset[disabled] .pv-button-destructive,
-fieldset[disabled] .pv-button-destructive:hover,
-fieldset[disabled] .pv-button-destructive:focus,
-fieldset[disabled] .pv-button-destructive:active {
+.pv-button-destructive[disabled], .pv-button-destructive[disabled]:hover, .pv-button-destructive[disabled]:focus, .pv-button-destructive[disabled]:active, fieldset[disabled] .pv-button-destructive, fieldset[disabled] .pv-button-destructive:hover, fieldset[disabled] .pv-button-destructive:focus, fieldset[disabled] .pv-button-destructive:active {
   background-color: #eab2b2;
   border-color: #e6a2a1;
 }
-
 .pv-button-destructive img, .pv-button-destructive i {
   vertical-align: text-bottom;
 }
@@ -1019,29 +966,23 @@ fieldset[disabled] .pv-button-destructive:active {
   min-width: 36px;
   -webkit-box-shadow: none;
           box-shadow: none;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   vertical-align: middle;
   text-align: center;
   border: 1px solid;
   border-color: transparent;
 }
-
 .pv-button-naked:hover, .pv-button-naked:focus, .pv-button-naked:active {
   color: #777777;
   background-color: rgba(0, 0, 0, 0);
   border-color: rgba(0, 0, 0, 0);
 }
-
-.pv-button-naked[disabled], .pv-button-naked[disabled]:hover, .pv-button-naked[disabled]:focus, .pv-button-naked[disabled]:active,
-fieldset[disabled] .pv-button-naked,
-fieldset[disabled] .pv-button-naked:hover,
-fieldset[disabled] .pv-button-naked:focus,
-fieldset[disabled] .pv-button-naked:active {
+.pv-button-naked[disabled], .pv-button-naked[disabled]:hover, .pv-button-naked[disabled]:focus, .pv-button-naked[disabled]:active, fieldset[disabled] .pv-button-naked, fieldset[disabled] .pv-button-naked:hover, fieldset[disabled] .pv-button-naked:focus, fieldset[disabled] .pv-button-naked:active {
   background-color: rgba(51, 51, 51, 0);
   border-color: rgba(41, 41, 41, 0);
 }
-
 .pv-button-naked img, .pv-button-naked i {
   vertical-align: text-bottom;
 }
@@ -1054,29 +995,23 @@ fieldset[disabled] .pv-button-naked:active {
   min-width: 36px;
   -webkit-box-shadow: none;
           box-shadow: none;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   vertical-align: middle;
   text-align: center;
   border: 1px solid;
   border-color: transparent;
 }
-
 .pv-button-naked-inverse:hover, .pv-button-naked-inverse:focus, .pv-button-naked-inverse:active {
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0);
   border-color: rgba(0, 0, 0, 0);
 }
-
-.pv-button-naked-inverse[disabled], .pv-button-naked-inverse[disabled]:hover, .pv-button-naked-inverse[disabled]:focus, .pv-button-naked-inverse[disabled]:active,
-fieldset[disabled] .pv-button-naked-inverse,
-fieldset[disabled] .pv-button-naked-inverse:hover,
-fieldset[disabled] .pv-button-naked-inverse:focus,
-fieldset[disabled] .pv-button-naked-inverse:active {
+.pv-button-naked-inverse[disabled], .pv-button-naked-inverse[disabled]:hover, .pv-button-naked-inverse[disabled]:focus, .pv-button-naked-inverse[disabled]:active, fieldset[disabled] .pv-button-naked-inverse, fieldset[disabled] .pv-button-naked-inverse:hover, fieldset[disabled] .pv-button-naked-inverse:focus, fieldset[disabled] .pv-button-naked-inverse:active {
   background-color: rgba(51, 51, 51, 0);
   border-color: rgba(41, 41, 41, 0);
 }
-
 .pv-button-naked-inverse img, .pv-button-naked-inverse i {
   vertical-align: text-bottom;
 }
@@ -1089,30 +1024,24 @@ fieldset[disabled] .pv-button-naked-inverse:active {
   min-width: 36px;
   -webkit-box-shadow: none;
           box-shadow: none;
-  -webkit-transition: all .2s ease;
-  transition: all .2s ease;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   vertical-align: middle;
   text-align: center;
   border: 1px solid;
   border-color: transparent;
   border-color: #999999;
 }
-
 .pv-button-ghost:hover, .pv-button-ghost:focus, .pv-button-ghost:active {
   color: #777777;
   background-color: rgba(0, 0, 0, 0);
   border-color: #858585;
 }
-
-.pv-button-ghost[disabled], .pv-button-ghost[disabled]:hover, .pv-button-ghost[disabled]:focus, .pv-button-ghost[disabled]:active,
-fieldset[disabled] .pv-button-ghost,
-fieldset[disabled] .pv-button-ghost:hover,
-fieldset[disabled] .pv-button-ghost:focus,
-fieldset[disabled] .pv-button-ghost:active {
+.pv-button-ghost[disabled], .pv-button-ghost[disabled]:hover, .pv-button-ghost[disabled]:focus, .pv-button-ghost[disabled]:active, fieldset[disabled] .pv-button-ghost, fieldset[disabled] .pv-button-ghost:hover, fieldset[disabled] .pv-button-ghost:focus, fieldset[disabled] .pv-button-ghost:active {
   background-color: rgba(51, 51, 51, 0);
   border-color: #c2c2c2;
 }
-
 .pv-button-ghost img, .pv-button-ghost i {
   vertical-align: text-bottom;
 }
@@ -1128,39 +1057,62 @@ fieldset[disabled] .pv-button-ghost:active {
 /* -- Color navy --  */
 /* -- Color navy --  */
 .pv-font-h1, .modal .modal-container .modal-header {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 18px;
+  line-height: 30px;
 }
 
 .pv-font-h2 {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 16px;
+  line-height: 26px;
 }
 
 .pv-font-title {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 12px;
+  line-height: normal;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
-.pv-font-small, .avatar, .avatar.avatar-small, .avatar.avatar-medium, .avatar.avatar-large, .pv-badge-wrap .pv-badge, .pv-counter {
+.pv-font-small, .pv-counter, .avatar, .avatar.avatar-small, .avatar.avatar-medium, .avatar.avatar-large, .pv-badge-wrap .pv-badge {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 11px;
+  line-height: normal;
 }
 
 .pv-font-regular, .pv-checkbox-label {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 13px;
+  line-height: normal;
   color: #222222;
 }
 
 .pv-font-semibold {
+  font-family: "proxima nova", "sans serif";
   font-size: 13px;
+  line-height: normal;
   font-weight: 600;
 }
 
 .pv-font-medium {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 16px;
+  line-height: 26px;
 }
 
 .pv-font-medium {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 18px;
+  line-height: 30px;
 }
 
 /* -- Color green --  */
@@ -1174,35 +1126,27 @@ fieldset[disabled] .pv-button-ghost:active {
 /* -- Color navy --  */
 /* -- Color navy --  */
 .border-normal {
-  border: 1px solid;
   border-color: #999999;
 }
-
 .border-normal:hover {
   border-color: #222222;
 }
-
 .border-normal:active {
   border-color: #8AB98E;
 }
-
 .border-normal.error {
   border-color: #D56261;
 }
 
 .border-light {
-  border: 1px solid;
   border-color: #DDDDDD;
 }
-
 .border-light:hover {
   border-color: #222222;
 }
-
 .border-light:active {
   border-color: #8AB98E;
 }
-
 .border-light.error {
   border-color: #D56261;
 }
@@ -1225,7 +1169,6 @@ fieldset[disabled] .pv-button-ghost:active {
   height: 36px;
   padding: 9px;
 }
-
 .pv-checkbox-wrapper .checkbox {
   background: #ffffff;
   border: 1px solid;
@@ -1234,17 +1177,14 @@ fieldset[disabled] .pv-button-ghost:active {
   width: 16px;
   height: 16px;
 }
-
 .pv-checkbox-wrapper .checkbox svg {
   fill: #ffffff;
   vertical-align: top;
 }
-
 .pv-checkbox-wrapper .checkbox.selected {
   background: #8AB98E;
   border-color: #8AB98E;
 }
-
 .pv-checkbox-wrapper .checkbox.selected path {
   fill: #ffffff;
 }
@@ -1253,7 +1193,7 @@ fieldset[disabled] .pv-button-ghost:active {
   color: #222222;
 }
 
-input[type="checkbox"] {
+input[type=checkbox] {
   display: none;
 }
 
@@ -1264,7 +1204,6 @@ input[type="checkbox"] {
   background: #e6e2e7;
   border-radius: 50%;
 }
-
 .circle-wrap .circle .mask,
 .circle-wrap .circle .fill {
   width: 150px;
@@ -1272,30 +1211,27 @@ input[type="checkbox"] {
   position: absolute;
   border-radius: 50%;
 }
-
 .circle-wrap .circle .mask {
   clip: rect(0px, 150px, 150px, 75px);
 }
-
 .circle-wrap .circle .mask .fill {
   clip: rect(0px, 75px, 150px, 0px);
   background-color: #9e00b1;
 }
-
 .circle-wrap .circle .mask .full {
   -webkit-animation: fill ease-in-out 3s;
           animation: fill ease-in-out 3s;
   -webkit-transform: rotate(126deg);
+      -ms-transform: rotate(126deg);
           transform: rotate(126deg);
 }
-
 .circle-wrap .circle .fill {
   -webkit-animation: fill ease-in-out 3s;
           animation: fill ease-in-out 3s;
   -webkit-transform: rotate(126deg);
+      -ms-transform: rotate(126deg);
           transform: rotate(126deg);
 }
-
 .circle-wrap .inside-circle {
   width: 130px;
   height: 130px;
@@ -1332,7 +1268,6 @@ input[type="checkbox"] {
             transform: rotate(126deg);
   }
 }
-
 /* -- Color green --  */
 /* -- Color blue --  */
 /* -- Color red --  */
@@ -1354,39 +1289,62 @@ input[type="checkbox"] {
 /* -- Color navy --  */
 /* -- Color navy --  */
 .pv-font-h1, .modal .modal-container .modal-header {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 18px;
+  line-height: 30px;
 }
 
 .pv-font-h2 {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 16px;
+  line-height: 26px;
 }
 
 .pv-font-title {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 12px;
+  line-height: normal;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
-.pv-font-small, .avatar, .avatar.avatar-small, .avatar.avatar-medium, .avatar.avatar-large, .pv-badge-wrap .pv-badge, .pv-counter {
+.pv-font-small, .pv-counter, .avatar, .avatar.avatar-small, .avatar.avatar-medium, .avatar.avatar-large, .pv-badge-wrap .pv-badge {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 11px;
+  line-height: normal;
 }
 
 .pv-font-regular, .pv-checkbox-label {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 13px;
+  line-height: normal;
   color: #222222;
 }
 
 .pv-font-semibold {
+  font-family: "proxima nova", "sans serif";
   font-size: 13px;
+  line-height: normal;
   font-weight: 600;
 }
 
 .pv-font-medium {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 16px;
+  line-height: 26px;
 }
 
 .pv-font-medium {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 18px;
+  line-height: 30px;
 }
 
 /* -- Color green --  */
@@ -1400,35 +1358,27 @@ input[type="checkbox"] {
 /* -- Color navy --  */
 /* -- Color navy --  */
 .border-normal {
-  border: 1px solid;
   border-color: #999999;
 }
-
 .border-normal:hover {
   border-color: #222222;
 }
-
 .border-normal:active {
   border-color: #8AB98E;
 }
-
 .border-normal.error {
   border-color: #D56261;
 }
 
 .border-light {
-  border: 1px solid;
   border-color: #DDDDDD;
 }
-
 .border-light:hover {
   border-color: #222222;
 }
-
 .border-light:active {
   border-color: #8AB98E;
 }
-
 .border-light.error {
   border-color: #D56261;
 }
@@ -1442,145 +1392,11 @@ input[type="checkbox"] {
   padding-top: 3px;
   display: inline-block;
 }
-
 .pv-counter.primary {
   background: #8AB98E;
 }
-
 .pv-counter.critical {
   background: #D56261;
-}
-
-/* -- Color green --  */
-/* -- Color blue --  */
-/* -- Color red --  */
-/* -- Color yellow --  */
-/* -- Color lilac --  */
-/* -- Color orange --  */
-/* -- Color grayscales --  */
-/* -- Color white --  */
-/* -- Color navy --  */
-/* -- Color navy --  */
-.pv-font-h1, .modal .modal-container .modal-header {
-  font-size: 18px;
-}
-
-.pv-font-h2 {
-  font-size: 16px;
-}
-
-.pv-font-title {
-  font-size: 12px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.pv-font-small, .avatar, .avatar.avatar-small, .avatar.avatar-medium, .avatar.avatar-large, .pv-badge-wrap .pv-badge, .pv-counter {
-  font-size: 11px;
-}
-
-.pv-font-regular, .pv-checkbox-label {
-  font-size: 13px;
-  color: #222222;
-}
-
-.pv-font-semibold {
-  font-size: 13px;
-  font-weight: 600;
-}
-
-.pv-font-medium {
-  font-size: 16px;
-}
-
-.pv-font-medium {
-  font-size: 18px;
-}
-
-/* -- Color green --  */
-/* -- Color blue --  */
-/* -- Color red --  */
-/* -- Color yellow --  */
-/* -- Color lilac --  */
-/* -- Color orange --  */
-/* -- Color grayscales --  */
-/* -- Color white --  */
-/* -- Color navy --  */
-/* -- Color navy --  */
-.border-normal {
-  border: 1px solid;
-  border-color: #999999;
-}
-
-.border-normal:hover {
-  border-color: #222222;
-}
-
-.border-normal:active {
-  border-color: #8AB98E;
-}
-
-.border-normal.error {
-  border-color: #D56261;
-}
-
-.border-light {
-  border: 1px solid;
-  border-color: #DDDDDD;
-}
-
-.border-light:hover {
-  border-color: #222222;
-}
-
-.border-light:active {
-  border-color: #8AB98E;
-}
-
-.border-light.error {
-  border-color: #D56261;
-}
-
-/* -- Color green --  */
-/* -- Color blue --  */
-/* -- Color red --  */
-/* -- Color yellow --  */
-/* -- Color lilac --  */
-/* -- Color orange --  */
-/* -- Color grayscales --  */
-/* -- Color white --  */
-/* -- Color navy --  */
-/* -- Color navy --  */
-.dropdown-menu {
-  display: none;
-  min-width: 160px;
-  position: absolute;
-  top: 100%;
-  z-index: 100;
-}
-
-.dropdown-menu .dropdown-list {
-  display: block;
-  line-height: 36px;
-  padding: 10px;
-  position: relative;
-}
-
-.dropdown-menu .dropdown-list:focus, .dropdown-menu .dropdown-list:active {
-  background-color: #DEEFE0;
-}
-
-.dropdown-menu .dropdown-list:hover {
-  background-color: #F5F5F5;
-  cursor: pointer;
-}
-
-.dropdown-menu .dropdown-list.is-disabled {
-  opacity: 0.5;
-  filter: alpha(opacity=50);
-  zoom: 1;
-  pointer-events: none;
-  background-color: transparent;
 }
 
 /* -- Color green --  */
@@ -1611,19 +1427,15 @@ input[type="checkbox"] {
   width: 400px;
   margin: 0 auto;
 }
-
 .pv-message-center .icon-container-medium {
   display: inline-block;
 }
-
 .pv-message-center.success .icon-container-medium {
   background: #5E8962;
 }
-
 .pv-message-center.error .icon-container-medium {
   background: #A93333;
 }
-
 .pv-message-center .message {
   display: inline-block;
   line-height: 46px;
@@ -1651,39 +1463,62 @@ input[type="checkbox"] {
 /* -- Color navy --  */
 /* -- Color navy --  */
 .pv-font-h1, .modal .modal-container .modal-header {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 18px;
+  line-height: 30px;
 }
 
 .pv-font-h2 {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 16px;
+  line-height: 26px;
 }
 
 .pv-font-title {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 12px;
+  line-height: normal;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
 .pv-font-small, .avatar, .avatar.avatar-small, .avatar.avatar-medium, .avatar.avatar-large, .pv-badge-wrap .pv-badge, .pv-counter {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 11px;
+  line-height: normal;
 }
 
 .pv-font-regular, .pv-checkbox-label {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 13px;
+  line-height: normal;
   color: #222222;
 }
 
 .pv-font-semibold {
+  font-family: "proxima nova", "sans serif";
   font-size: 13px;
+  line-height: normal;
   font-weight: 600;
 }
 
 .pv-font-medium {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 16px;
+  line-height: 26px;
 }
 
 .pv-font-medium {
+  font-family: "proxima nova", "sans serif";
+  font-weight: 400;
   font-size: 18px;
+  line-height: 30px;
 }
 
 /* -- Color green --  */
@@ -1697,35 +1532,27 @@ input[type="checkbox"] {
 /* -- Color navy --  */
 /* -- Color navy --  */
 .border-normal {
-  border: 1px solid;
   border-color: #999999;
 }
-
 .border-normal:hover {
   border-color: #222222;
 }
-
 .border-normal:active {
   border-color: #8AB98E;
 }
-
 .border-normal.error {
   border-color: #D56261;
 }
 
 .border-light {
-  border: 1px solid;
   border-color: #DDDDDD;
 }
-
 .border-light:hover {
   border-color: #222222;
 }
-
 .border-light:active {
   border-color: #8AB98E;
 }
-
 .border-light.error {
   border-color: #D56261;
 }
@@ -1749,7 +1576,6 @@ input[type="checkbox"] {
   overflow-x: hidden;
   background: rgba(34, 34, 34, 0.75);
 }
-
 .modal:target, .modal.active {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1757,7 +1583,6 @@ input[type="checkbox"] {
   opacity: 1;
   z-index: 100;
 }
-
 .modal .modal-container {
   -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.2);
@@ -1770,27 +1595,22 @@ input[type="checkbox"] {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-animation: slide-down .2s ease 1;
-          animation: slide-down .2s ease 1;
+  -webkit-animation: slide-down 0.2s ease 1;
+          animation: slide-down 0.2s ease 1;
   width: 380px;
 }
-
 .modal .modal-container.small {
   width: 380px;
 }
-
 .modal .modal-container.medium {
   width: 500px;
 }
-
 .modal .modal-container.large {
   width: 720px;
 }
-
 .modal .modal-container.small, .modal .modal-container.medium, .modal .modal-container.large {
   min-height: 190px;
 }
-
 .modal .modal-container .modal-header {
   color: #222222;
   padding: 20px;
@@ -1802,18 +1622,15 @@ input[type="checkbox"] {
   display: -ms-flexbox;
   display: flex;
 }
-
 .modal .modal-container .modal-header.destructive {
   color: #D56261;
 }
-
 .modal .modal-container .modal-body {
   overflow-y: auto;
   min-height: 100px;
   padding: 20px;
   position: relative;
 }
-
 .modal .modal-container .modal-footer {
   padding: 20px;
   text-align: right;
@@ -1844,7 +1661,6 @@ input[type="checkbox"] {
   position: relative;
   display: inline-block;
 }
-
 .pv-popover .pv-popover-container {
   -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.2);
   box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.2);
@@ -1855,11 +1671,13 @@ input[type="checkbox"] {
   position: absolute;
   top: 0;
   -webkit-transform: translate(-50%, -50%) scale(0);
+      -ms-transform: translate(-50%, -50%) scale(0);
           transform: translate(-50%, -50%) scale(0);
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  -o-transition: transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
   min-width: 36px;
   max-width: 300px;
   width: 300px;
@@ -1867,44 +1685,37 @@ input[type="checkbox"] {
   max-height: 300px;
   z-index: 101;
 }
-
-.pv-popover *:focus + .pv-popover-container,
-.pv-popover:hover .pv-popover-container {
+.pv-popover *:focus + .pv-popover-container, .pv-popover:hover .pv-popover-container {
   display: block;
   -webkit-transform: translate(-50%, -100%) scale(1);
+      -ms-transform: translate(-50%, -100%) scale(1);
           transform: translate(-50%, -100%) scale(1);
 }
-
 .pv-popover.right .pv-popover-container {
   left: 100%;
   top: 50%;
 }
-
-.pv-popover.right *:focus + .pv-popover-container,
-.pv-popover.right:hover .pv-popover-container {
+.pv-popover.right *:focus + .pv-popover-container, .pv-popover.right:hover .pv-popover-container {
   -webkit-transform: translate(0, -50%) scale(1);
+      -ms-transform: translate(0, -50%) scale(1);
           transform: translate(0, -50%) scale(1);
 }
-
 .pv-popover.bottom .pv-popover-container {
   left: 50%;
   top: 100%;
 }
-
-.pv-popover.bottom *:focus + .pv-popover-container,
-.pv-popover.bottom:hover .pv-popover-container {
+.pv-popover.bottom *:focus + .pv-popover-container, .pv-popover.bottom:hover .pv-popover-container {
   -webkit-transform: translate(-50%, 0) scale(1);
+      -ms-transform: translate(-50%, 0) scale(1);
           transform: translate(-50%, 0) scale(1);
 }
-
 .pv-popover.left .pv-popover-container {
   left: 0;
   top: 50%;
 }
-
-.pv-popover.left *:focus + .pv-popover-container,
-.pv-popover.left:hover .pv-popover-container {
+.pv-popover.left *:focus + .pv-popover-container, .pv-popover.left:hover .pv-popover-container {
   -webkit-transform: translate(-100%, -50%) scale(1);
+      -ms-transform: translate(-100%, -50%) scale(1);
           transform: translate(-100%, -50%) scale(1);
 }
 /*# sourceMappingURL=pvds.css.map */

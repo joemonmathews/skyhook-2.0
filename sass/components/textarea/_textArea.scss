@@ -1,0 +1,36 @@
+@import "../../utilities/utilities/sizes";
+@import "../../utilities/style/textStyles";
+@import "../../utilities/utilities/borders";
+@import "../../utilities/utilities/shadows";
+@import "../../utilities/utilities/spaces";
+@import "../../utilities/style/colors";
+
+
+.textarea {
+    height: auto;
+    width: 100%;
+    min-height: map-get($pv-sizes, medium);
+    max-height: 300px;
+    overflow: scroll;
+    padding: map-get($pv-spaces, small);
+    border-radius: $base-border-radius;
+    background-color: $pv-white;
+    resize: none;
+    text-align: left;
+
+    &.is-focused, .is-focus-selected {
+        @include focus();
+
+        &.is-error {
+            border-color: $pv-red-regular;
+        }
+        
+    }
+
+    &.is-error {
+        @include pv-border();
+        border-color: $pv-red-regular;
+
+    }
+
+}

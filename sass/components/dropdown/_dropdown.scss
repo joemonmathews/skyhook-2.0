@@ -15,20 +15,21 @@ $dropdown-menu-min-height: map-get($pv-sizes, small);
 
 
 .dropdown-menu {
-  display: none;
+  // display: none;
   min-width: $dropdown-menu-min-width;
-  position: absolute;
-  top: 100%;
+  // position: absolute;
+  // top: 100%;
+  @include box-shadow-regular();
   z-index:100; // #todo
 
   .dropdown-list {
     display: block;
     line-height: map-get($pv-sizes, small);
-    padding: map-get($pv-spaces, small);
+    padding: 0 map-get($pv-spaces, small);
     position: relative;
 
     &:focus,
-    &:active {
+    &.is-active {
       background-color: $pv-green-light;
     }
 

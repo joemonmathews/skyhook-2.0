@@ -1,0 +1,52 @@
+
+
+@import "../../utilities/utilities/sizes";
+@import "../../utilities/style/textStyles";
+@import "../../utilities/utilities/borders";
+@import "../../utilities/utilities/shadows";
+@import "../../utilities/utilities/spaces";
+@import "../../utilities/style/colors";
+@import "../../utilities/utilities/overflow";
+
+
+
+@mixin tag {
+    line-height: map-get($pv-sizes, xsmall);
+    min-width: map-get($pv-sizes, small);
+    padding: 0 map-get($pv-spaces, small);
+    border-radius: map-get($pv-sizes, small)/2;
+    font-size: $font-small;
+    width: fit-content;
+    color: $pv-white;
+    display: inline-block;
+   
+
+    &.green {
+        background-color: $pv-green-regular;
+    }
+
+    &.blue {
+        background-color: $pv-blue-regular;
+    }
+
+    &.red {
+        background-color: $pv-red-regular;
+    }
+
+    &.yellow {
+        background-color: $pv-yellow-regular;
+    }
+
+    &.lilac {
+        background-color: $pv-lilac-regular;
+    }
+
+    &.orange {
+        background-color: $pv-orange-regular;
+    }
+
+}
+
+.tag {
+    @include tag()
+}

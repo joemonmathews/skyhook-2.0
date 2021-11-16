@@ -21,7 +21,7 @@ $base-border-radius: 2px;
 
 
 
-.border-normal {
+@mixin border-normal() {
     @include pv-border();
     border-color: $pv-grayscale-3;
 
@@ -53,3 +53,12 @@ $base-border-radius: 2px;
 
 }
 
+@mixin focus {
+    width: 100%;
+    height: auto;
+    outline: 2px solid $pv-blue-regular;
+}
+
+@mixin border-hover {
+    border-color: $pv-grayscale-1
+}

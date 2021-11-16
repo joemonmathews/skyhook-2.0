@@ -1,0 +1,51 @@
+
+
+@import "../../utilities/utilities/sizes";
+@import "../../utilities/style/textStyles";
+@import "../../utilities/utilities/borders";
+@import "../../utilities/utilities/shadows";
+@import "../../utilities/utilities/spaces";
+@import "../../utilities/style/colors";
+
+
+.input {
+    width: 100%;
+    height: map-get($pv-sizes, small);
+    padding: map-get($pv-spaces, small);
+    border-radius: $base-border-radius;
+    background-color: $pv-white;
+    text-align: left;
+    @include border-normal();
+
+    &:hover {
+		@include border-hover()
+	}
+
+	&[disabled] {
+		&:hover,
+		&:focus,
+		&:active {
+			@extend .cursor-default;
+		  
+		}
+	}
+
+
+    &.is-focused, .is-focus-selected {
+        @include focus();
+
+        &.is-error {
+            border-color: $pv-red-regular;
+        }
+        
+    }
+
+    &.is-error {
+        @include pv-border();
+        border-color: $pv-red-regular;
+
+    }
+
+    
+
+}

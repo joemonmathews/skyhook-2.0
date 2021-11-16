@@ -15,9 +15,8 @@
         @extend .pv-font-small;
         color: $text-primary;
         text-align: center;
-        // border-radius: $border-radius;
-        border-radius: $border-radius;
-        height: map-get($pv-sizes, xsmall);
+        line-height: map-get($pv-sizes, xsmall);
+        border-radius: map-get($pv-sizes, xsmall)/2;
         min-width: map-get($pv-sizes, small); ;
         padding: 2px map-get($pv-spaces, small);
         display: inline-block;
