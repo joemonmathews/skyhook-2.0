@@ -42,62 +42,42 @@ $font-semibold: 400 !default;
 
 
 
-@mixin pv-font {
-    font-family: $base-font-family;
-    font-weight: 400;
 
-}
 
 .pv-font-h1 {
-    @include pv-font();
-    font-size: 18px;
-    line-height: 30px;
+    font-size: $font-large;
 }
 
 .pv-font-h2 {
-    @include pv-font();
-    font-size: 16px;
-    line-height: 26px;
+    font-size: $font-medium;
 }
 
 .pv-font-title {
-    @include pv-font();
-    font-size: 12px;
-    line-height: normal;
+    font-size: $font-title;
     letter-spacing: 1px;
     text-transform: uppercase;
 }
 
 .pv-font-small {
-    @include pv-font();
-    font-size: 11px;
-    line-height: normal;
+    font-size: $font-small;
 }
 
 .pv-font-regular {
-    @include pv-font();
-    font-size: 13px;
-    line-height: normal;
+    font-size: $font-regular;
     color: $pv-grayscale-1;
 }
 
 .pv-font-semibold {
-    font-family: $base-font-family;
-    font-size: 13px;
-    line-height: normal;
+    font-size: $font-regular;
     font-weight: 600;
 }
 
 .pv-font-medium {
-    @include pv-font();
-    font-size: 16px;
-    line-height: 26px;
+    font-size: $font-medium;
 }
 
 .pv-font-medium {
-    @include pv-font();
-    font-size: 18px;
-    line-height: 30px;
+    font-size: $font-large;
 }
 
 $text-primary: $pv-grayscale-1;

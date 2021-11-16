@@ -436,62 +436,39 @@ li::before {
 /* -- Color navy --  */
 /* -- Color navy --  */
 .pv-font-h1, .modal .modal-container .modal-header {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 18px;
-  line-height: 30px;
 }
 
 .pv-font-h2 {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 16px;
-  line-height: 26px;
 }
 
 .pv-font-title {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 12px;
-  line-height: normal;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
 .pv-font-small, .avatar, .avatar.avatar-small, .avatar.avatar-medium, .avatar.avatar-large, .pv-badge-wrap .pv-badge, .pv-counter {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 11px;
-  line-height: normal;
 }
 
 .pv-font-regular, .pv-checkbox-label {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 13px;
-  line-height: normal;
   color: #222222;
 }
 
 .pv-font-semibold {
-  font-family: "proxima nova", "sans serif";
   font-size: 13px;
-  line-height: normal;
   font-weight: 600;
 }
 
 .pv-font-medium {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 16px;
-  line-height: 26px;
 }
 
 .pv-font-medium {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 18px;
-  line-height: 30px;
 }
 
 /* -- Color green --  */
@@ -655,62 +632,39 @@ fieldset[disabled] .pv-button-ghost:active {
 /* -- Color navy --  */
 /* -- Color navy --  */
 .pv-font-h1, .modal .modal-container .modal-header {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 18px;
-  line-height: 30px;
 }
 
 .pv-font-h2 {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 16px;
-  line-height: 26px;
 }
 
 .pv-font-title {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 12px;
-  line-height: normal;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
 .pv-font-small, .avatar, .avatar.avatar-small, .avatar.avatar-medium, .avatar.avatar-large, .pv-badge-wrap .pv-badge, .pv-counter {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 11px;
-  line-height: normal;
 }
 
 .pv-font-regular, .pv-checkbox-label {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 13px;
-  line-height: normal;
   color: #222222;
 }
 
 .pv-font-semibold {
-  font-family: "proxima nova", "sans serif";
   font-size: 13px;
-  line-height: normal;
   font-weight: 600;
 }
 
 .pv-font-medium {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 16px;
-  line-height: 26px;
 }
 
 .pv-font-medium {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 18px;
-  line-height: 30px;
 }
 
 .avatar {
@@ -790,62 +744,39 @@ fieldset[disabled] .pv-button-ghost:active {
 /* -- Color navy --  */
 /* -- Color navy --  */
 .pv-font-h1, .modal .modal-container .modal-header {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 18px;
-  line-height: 30px;
 }
 
 .pv-font-h2 {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 16px;
-  line-height: 26px;
 }
 
 .pv-font-title {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 12px;
-  line-height: normal;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
 .pv-font-small, .avatar, .avatar.avatar-small, .avatar.avatar-medium, .avatar.avatar-large, .pv-badge-wrap .pv-badge, .pv-counter {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 11px;
-  line-height: normal;
 }
 
 .pv-font-regular, .pv-checkbox-label {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 13px;
-  line-height: normal;
   color: #222222;
 }
 
 .pv-font-semibold {
-  font-family: "proxima nova", "sans serif";
   font-size: 13px;
-  line-height: normal;
   font-weight: 600;
 }
 
 .pv-font-medium {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 16px;
-  line-height: 26px;
 }
 
 .pv-font-medium {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 18px;
-  line-height: 30px;
 }
 
 /* -- Color green --  */
@@ -1191,62 +1122,39 @@ fieldset[disabled] .pv-button-ghost:active {
 /* -- Color navy --  */
 /* -- Color navy --  */
 .pv-font-h1, .modal .modal-container .modal-header {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 18px;
-  line-height: 30px;
 }
 
 .pv-font-h2 {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 16px;
-  line-height: 26px;
 }
 
 .pv-font-title {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 12px;
-  line-height: normal;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
 .pv-font-small, .avatar, .avatar.avatar-small, .avatar.avatar-medium, .avatar.avatar-large, .pv-badge-wrap .pv-badge, .pv-counter {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 11px;
-  line-height: normal;
 }
 
 .pv-font-regular, .pv-checkbox-label {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 13px;
-  line-height: normal;
   color: #222222;
 }
 
 .pv-font-semibold {
-  font-family: "proxima nova", "sans serif";
   font-size: 13px;
-  line-height: normal;
   font-weight: 600;
 }
 
 .pv-font-medium {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 16px;
-  line-height: 26px;
 }
 
 .pv-font-medium {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 18px;
-  line-height: 30px;
 }
 
 /* -- Color green --  */
@@ -1438,62 +1346,39 @@ input[type="checkbox"] {
 /* -- Color navy --  */
 /* -- Color navy --  */
 .pv-font-h1, .modal .modal-container .modal-header {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 18px;
-  line-height: 30px;
 }
 
 .pv-font-h2 {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 16px;
-  line-height: 26px;
 }
 
 .pv-font-title {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 12px;
-  line-height: normal;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
 .pv-font-small, .avatar, .avatar.avatar-small, .avatar.avatar-medium, .avatar.avatar-large, .pv-badge-wrap .pv-badge, .pv-counter {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 11px;
-  line-height: normal;
 }
 
 .pv-font-regular, .pv-checkbox-label {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 13px;
-  line-height: normal;
   color: #222222;
 }
 
 .pv-font-semibold {
-  font-family: "proxima nova", "sans serif";
   font-size: 13px;
-  line-height: normal;
   font-weight: 600;
 }
 
 .pv-font-medium {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 16px;
-  line-height: 26px;
 }
 
 .pv-font-medium {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 18px;
-  line-height: 30px;
 }
 
 /* -- Color green --  */
@@ -1554,6 +1439,32 @@ input[type="checkbox"] {
 
 .pv-counter.critical {
   background: #D56261;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown .menu {
+  -webkit-animation: slide-down .15s ease 1;
+          animation: slide-down .15s ease 1;
+  display: none;
+  left: 0;
+  max-height: 460px;
+  overflow-y: auto;
+  position: absolute;
+  top: 100%;
+}
+
+.dropdown.dropdown-right .menu {
+  left: auto;
+  right: 0;
+}
+
+.dropdown.active .menu,
+.dropdown .dropdown-toggle:focus + .menu,
+.dropdown .menu:hover {
+  display: block;
 }
 
 /* -- Color green --  */
@@ -1624,62 +1535,39 @@ input[type="checkbox"] {
 /* -- Color navy --  */
 /* -- Color navy --  */
 .pv-font-h1, .modal .modal-container .modal-header {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 18px;
-  line-height: 30px;
 }
 
 .pv-font-h2 {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 16px;
-  line-height: 26px;
 }
 
 .pv-font-title {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 12px;
-  line-height: normal;
   letter-spacing: 1px;
   text-transform: uppercase;
 }
 
 .pv-font-small, .avatar, .avatar.avatar-small, .avatar.avatar-medium, .avatar.avatar-large, .pv-badge-wrap .pv-badge, .pv-counter {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 11px;
-  line-height: normal;
 }
 
 .pv-font-regular, .pv-checkbox-label {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 13px;
-  line-height: normal;
   color: #222222;
 }
 
 .pv-font-semibold {
-  font-family: "proxima nova", "sans serif";
   font-size: 13px;
-  line-height: normal;
   font-weight: 600;
 }
 
 .pv-font-medium {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 16px;
-  line-height: 26px;
 }
 
 .pv-font-medium {
-  font-family: "proxima nova", "sans serif";
-  font-weight: 400;
   font-size: 18px;
-  line-height: 30px;
 }
 
 /* -- Color green --  */
