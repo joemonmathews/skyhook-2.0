@@ -33,7 +33,7 @@
                 vertical-align: top;
             }
 
-            &.selected {
+            &.is-active {
                 background: $pv-green-regular;
                 border-color: $pv-green-regular;
                 path {

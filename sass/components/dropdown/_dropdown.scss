@@ -46,5 +46,12 @@ $dropdown-menu-min-height: map-get($pv-sizes, small);
 
   }
 
+  .divider {
+    background-color: $pv-grayscale-5;
+    border: none;
+    display: block;
+    height: 1px;
+  }
+
 }
 

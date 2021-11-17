@@ -2,8 +2,28 @@
 @import "../../utilities/style/colors";
 
 
+.icon-container-xsmall, .icon-container-small, .icon-container-medium, .icon-container-large  {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center
+}
+
+.icon-container-xsmall {
+    height: map-get($pv-sizes, xsmall);
+    width: map-get($pv-sizes, xsmall);
+}
+
+.icon-container-small {
+    height: map-get($pv-sizes, small);
+    width: map-get($pv-sizes, small);
+}
+
 .icon-container-medium {
     height: map-get($pv-sizes, medium);
     width: map-get($pv-sizes, medium);
-    background: $pv-red-dark;
+}
+
+.icon-container-large {
+    height: map-get($pv-sizes, large);
+    width: map-get($pv-sizes, large);
 }

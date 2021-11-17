@@ -28,7 +28,7 @@ a:hover {
 
 section {
     background: #fff;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 .width20 {
@@ -46,7 +46,7 @@ section {
 .wrap {
     width: 1366px;
     margin: 0 auto;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     align-items: stretch;
 }
@@ -62,21 +62,30 @@ section {
 
 .showComponentWrap-element {
     padding: 20px ;
+    float: left;
+    width: 40%;
+    display: flex;
+    /* justify-items: left; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .markup {
     border: 1px solid #ddd ;
     font-size: 13px;
     background: #f7f7f7;
-    min-height: 100px;
-
+    min-height: 400px;
+    float: left;
+    width: 60%;
 }
 
-xmp {
+
+.markup xmp {
     text-align: left;
     margin: 0;
     padding: 0 10px 20px 20px;
-    white-space: pre-wrap;
+    white-space: break-spaces;
 }
 
 .article-title {
@@ -104,7 +113,7 @@ code {
 
 .article-subtitle {
     padding-left: 6px;
-    border-left: 3px dotted rgb(7, 136, 1);
+    /* border-left: 3px dotted rgb(7, 136, 1); */
     font-size: 16px;
     font-weight: 400;
     line-height: 16px;
