@@ -6,6 +6,7 @@
 @import "../../utilities/utilities/shadows";
 @import "../../utilities/utilities/spaces";
 @import "../../utilities/style/colors";
+@import "../../utilities/utilities/cursors";
 
 
 .input {
@@ -20,6 +21,10 @@
     &:hover {
 		@include border-hover()
 	}
+
+    &.is-active {
+        border-color: $pv-green-dark;
+      }
 
 	&[disabled] {
 		&:hover,
@@ -48,4 +53,33 @@
 
     
 
+}
+
+.fieldWrap {
+    width: 100%;
+    height: map-get($pv-sizes, small);
+    padding: 0 map-get($pv-spaces, medium);
+    border-radius: $base-border-radius;
+    background-color: $pv-white;
+    text-align: left;
+    outline: 1px solid $pv-grayscale-3;
+    position: relative;
+    @extend .cursor-pointer;
+    
+
+    .input {
+        border: none;
+    }
+
+    .is-right {
+        position: absolute;
+        right: 10px;
+        top: 5px;
+        
+    }
+    .is-left {
+        position: absolute;
+        left: 10px;
+        top: 9px;
+    }
 }

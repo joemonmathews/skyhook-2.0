@@ -53,5 +53,9 @@ $dropdown-menu-min-height: map-get($pv-sizes, small);
     height: 1px;
   }
 
+  .has-filter {
+    padding: map-get($pv-spaces, small);
+  }
+
 }
 

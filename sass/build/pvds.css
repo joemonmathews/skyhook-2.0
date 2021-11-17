@@ -349,7 +349,6 @@ input[type="text"], select {
   cursor: text;
   color: #4A4A4A;
   font-size: 13px;
-  height: 40px;
 }
 
 /*
@@ -522,7 +521,7 @@ fieldset[disabled] .pv-button-ghost:active, .input[disabled]:hover, .input[disab
   cursor: pointer;
 }
 
-.cursor-pointer, .pv-button-primary, .pv-button-destructive, .pv-button-naked, .pv-button-naked-inverse, .pv-button-ghost {
+.cursor-pointer, .pv-button-primary, .pv-button-destructive, .pv-button-naked, .pv-button-naked-inverse, .pv-button-ghost, .fieldWrap {
   cursor: pointer;
 }
 
@@ -831,7 +830,7 @@ fieldset[disabled] .pv-button-ghost:active, .input[disabled]:hover, .input[disab
   cursor: pointer;
 }
 
-.cursor-pointer, .pv-button-primary, .pv-button-destructive, .pv-button-naked, .pv-button-naked-inverse, .pv-button-ghost {
+.cursor-pointer, .pv-button-primary, .pv-button-destructive, .pv-button-naked, .pv-button-naked-inverse, .pv-button-ghost, .fieldWrap {
   cursor: pointer;
 }
 
@@ -1181,6 +1180,13 @@ fieldset[disabled] .pv-button-ghost:active {
   fill: #ffffff;
 }
 
+.pv-checkbox-wrapper .checkbox.is-disabled {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  zoom: 1;
+  pointer-events: none;
+}
+
 .pv-checkbox-label {
   color: #222222;
 }
@@ -1488,6 +1494,10 @@ input[type="checkbox"] {
   height: 1px;
 }
 
+.dropdown-menu .has-filter {
+  padding: 10px;
+}
+
 /* -- Color green --  */
 /* -- Color blue --  */
 /* -- Color red --  */
@@ -1613,6 +1623,62 @@ input[type="checkbox"] {
 /* -- Color white --  */
 /* -- Color navy --  */
 /* -- Color navy --  */
+.cursor-default, .pv-button-primary[disabled], .pv-button-primary[disabled]:hover, .pv-button-primary[disabled]:focus, .pv-button-primary[disabled]:active,
+fieldset[disabled] .pv-button-primary,
+fieldset[disabled] .pv-button-primary:hover,
+fieldset[disabled] .pv-button-primary:focus,
+fieldset[disabled] .pv-button-primary:active, .pv-button-destructive[disabled], .pv-button-destructive[disabled]:hover, .pv-button-destructive[disabled]:focus, .pv-button-destructive[disabled]:active,
+fieldset[disabled] .pv-button-destructive,
+fieldset[disabled] .pv-button-destructive:hover,
+fieldset[disabled] .pv-button-destructive:focus,
+fieldset[disabled] .pv-button-destructive:active, .pv-button-naked[disabled], .pv-button-naked[disabled]:hover, .pv-button-naked[disabled]:focus, .pv-button-naked[disabled]:active,
+fieldset[disabled] .pv-button-naked,
+fieldset[disabled] .pv-button-naked:hover,
+fieldset[disabled] .pv-button-naked:focus,
+fieldset[disabled] .pv-button-naked:active, .pv-button-naked-inverse[disabled], .pv-button-naked-inverse[disabled]:hover, .pv-button-naked-inverse[disabled]:focus, .pv-button-naked-inverse[disabled]:active,
+fieldset[disabled] .pv-button-naked-inverse,
+fieldset[disabled] .pv-button-naked-inverse:hover,
+fieldset[disabled] .pv-button-naked-inverse:focus,
+fieldset[disabled] .pv-button-naked-inverse:active, .pv-button-ghost[disabled], .pv-button-ghost[disabled]:hover, .pv-button-ghost[disabled]:focus, .pv-button-ghost[disabled]:active,
+fieldset[disabled] .pv-button-ghost,
+fieldset[disabled] .pv-button-ghost:hover,
+fieldset[disabled] .pv-button-ghost:focus,
+fieldset[disabled] .pv-button-ghost:active, .input[disabled]:hover, .input[disabled]:focus, .input[disabled]:active {
+  cursor: pointer;
+}
+
+.cursor-pointer, .pv-button-primary, .pv-button-destructive, .pv-button-naked, .pv-button-naked-inverse, .pv-button-ghost, .fieldWrap {
+  cursor: pointer;
+}
+
+.cursor-grab {
+  cursor: pointer;
+}
+
+.cursor-grabbing {
+  cursor: pointer;
+}
+
+.cursor-resize {
+  cursor: pointer;
+}
+
+.cursor-column-resize {
+  cursor: pointer;
+}
+
+.cursor-move {
+  cursor: pointer;
+}
+
+.cursor-not-allowed {
+  cursor: pointer;
+}
+
+.cursor-text {
+  cursor: pointer;
+}
+
 .input {
   width: 100%;
   height: 36px;
@@ -1640,6 +1706,10 @@ input[type="checkbox"] {
   border-color: #222222;
 }
 
+.input.is-active {
+  border-color: #5E8962;
+}
+
 .input.is-focused, .input .is-focus-selected {
   width: 100%;
   height: auto;
@@ -1653,6 +1723,33 @@ input[type="checkbox"] {
 .input.is-error {
   border: 1px solid;
   border-color: #D56261;
+}
+
+.fieldWrap {
+  width: 100%;
+  height: 36px;
+  padding: 0 20px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  text-align: left;
+  outline: 1px solid #999999;
+  position: relative;
+}
+
+.fieldWrap .input {
+  border: none;
+}
+
+.fieldWrap .is-right {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+.fieldWrap .is-left {
+  position: absolute;
+  left: 10px;
+  top: 9px;
 }
 
 .pv-message-center {

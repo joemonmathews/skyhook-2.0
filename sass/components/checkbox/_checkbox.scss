@@ -40,6 +40,11 @@
                     fill: $pv-white;
                 }
             }
+            &.is-disabled {
+                @include opacity(0.5);
+                pointer-events: none;
+                
+            }
 
         }
 
