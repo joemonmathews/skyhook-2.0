@@ -6,17 +6,29 @@
 @import "../../utilities/style/colors";
 
 
+::placeholder {
+    color: $pv-grayscale-5;
+}
 
-
-.main-form-wrapper {
+.form-wrapper {
     padding: map-get($pv-spaces, large);
     max-height: 100vh;
 }
-.form-wrapper {
-    margin: 0 auto;
-    width: 100%;
-    padding: map-get($pv-spaces, medium);
+
+.form-header {
+    text-transform: uppercase;
+    font-size: $font-regular;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-bottom: map-get($pv-spaces,'medium');
+    padding-left: map-get($pv-spaces,'small');
 }
+
+.form-section {
+    margin-bottom: map-get($pv-spaces, 'large');
+}
+
+// for columns 
 .form-pair-wrapper {
     display: flex;
     align-items: flex-end;
@@ -25,11 +37,12 @@
     min-width: 300px;
 }
 
+// label + input
+
 .form-field {
     margin: 0 map-get($pv-spaces, small) map-get($pv-spaces, medium);
     flex-grow: 1;
     min-width: 300px;
-    width: 25%;
 }
 
 .form-label {
@@ -41,27 +54,8 @@
         align-items: center;
     }
 }
-.form-label-text {
-    margin-right: map-get($pv-spaces, 'xsmall');
-}
-.form-label-text-wrap {
-    margin-right: map-get($pv-spaces, 'xsmall');
-    display: flex;
-}
-.form-header {
-    text-transform: uppercase;
-    font-size: $font-regular;
-    font-weight: normal;
-    letter-spacing: 1px;
-    margin-bottom: map-get($pv-spaces,'medium');
-    padding-left: map-get($pv-spaces,'small');
-}
-.form-section {
-    margin-bottom: map-get($pv-spaces, 'large');
-}
-::placeholder {
-    color: $pv-grayscale-5;
-}
+
+// footer including buttons
 
 .form-footer {
     padding: map-get($pv-spaces,'medium') 0;

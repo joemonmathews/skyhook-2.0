@@ -2358,15 +2358,35 @@ fieldset[disabled] .pv-button-ghost:active, .input[disabled]:hover, .input[disab
 /* -- Color white --  */
 /* -- Color navy --  */
 /* -- Color navy --  */
-.main-form-wrapper {
+::-webkit-input-placeholder {
+  color: #DDDDDD;
+}
+:-ms-input-placeholder {
+  color: #DDDDDD;
+}
+::-ms-input-placeholder {
+  color: #DDDDDD;
+}
+::placeholder {
+  color: #DDDDDD;
+}
+
+.form-wrapper {
   padding: 36px;
   max-height: 100vh;
 }
 
-.form-wrapper {
-  margin: 0 auto;
-  width: 100%;
-  padding: 20px;
+.form-header {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+.form-section {
+  margin-bottom: 36px;
 }
 
 .form-pair-wrapper {
@@ -2388,7 +2408,6 @@ fieldset[disabled] .pv-button-ghost:active, .input[disabled]:hover, .input[disab
       -ms-flex-positive: 1;
           flex-grow: 1;
   min-width: 300px;
-  width: 25%;
 }
 
 .form-label {
@@ -2406,41 +2425,6 @@ fieldset[disabled] .pv-button-ghost:active, .input[disabled]:hover, .input[disab
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.form-label-text-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.form-header {
-  text-transform: uppercase;
-  font-size: 13px;
-  font-weight: normal;
-  letter-spacing: 1px;
-  margin-bottom: 20px;
-  padding-left: 10px;
-}
-
-.form-section {
-  margin-bottom: 36px;
-}
-
-::-webkit-input-placeholder {
-  color: #DDDDDD;
-}
-
-:-ms-input-placeholder {
-  color: #DDDDDD;
-}
-
-::-ms-input-placeholder {
-  color: #DDDDDD;
-}
-
-::placeholder {
-  color: #DDDDDD;
 }
 
 .form-footer {
