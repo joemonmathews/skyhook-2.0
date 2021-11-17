@@ -1167,16 +1167,16 @@ fieldset[disabled] .pv-button-ghost:active {
 }
 
 .pv-checkbox-wrapper .checkbox svg {
-  fill: #ffffff;
+  fill: #8AB98E;
   vertical-align: top;
 }
 
-.pv-checkbox-wrapper .checkbox.is-active {
+.pv-checkbox-wrapper .checkbox.is-selected {
   background: #8AB98E;
   border-color: #8AB98E;
 }
 
-.pv-checkbox-wrapper .checkbox.is-active path {
+.pv-checkbox-wrapper .checkbox.is-selected path {
   fill: #ffffff;
 }
 

@@ -29,11 +29,11 @@
             height: map-get($pv-sizes, xsmall);
 
             svg {
-                fill: $pv-white;
+                fill: $pv-green-regular;
                 vertical-align: top;
             }
 
-            &.is-active {
+            &.is-selected {
                 background: $pv-green-regular;
                 border-color: $pv-green-regular;
                 path {
