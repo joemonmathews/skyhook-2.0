@@ -1,0 +1,73 @@
+
+@import "../../utilities/style/colors";
+@import "../../utilities/style/textStyles";
+@import "../../utilities/utilities/sizes";
+
+$caret-size: 10px;
+$caret-alignment-positon: calc(50% - #{$caret-size});
+$caret-direction-position: -$caret-size - $caret-size/2;
+$caret-border: $caret-size solid $pv-navy;
+
+.tooltip-wrapper {
+    position: relative;
+    max-width: 300px;
+    line-height: normal;
+}
+
+.tooltip-body {
+    background-color: $pv-navy;
+    border-radius: $base-border-radius;
+    color: $pv-white;
+    padding: map-get($pv-spaces, small);
+    position: relative;
+}
+@mixin tooltip-arrow() {
+    width: 0; 
+    height: 0; 
+    border-top: $caret-size solid transparent;
+    border-left: $caret-size solid transparent;
+    border-bottom: $caret-size solid transparent; 
+    border-right: $caret-size solid transparent; 
+    position: absolute;
+}
+
+
+@mixin tooltip-left(){
+    border-right: $caret-border;
+    bottom: $caret-alignment-positon;
+    left: $caret-direction-position;
+}
+
+@mixin tooltip-top(){
+    border-bottom: $caret-border;
+    left: $caret-alignment-positon;
+    top: $caret-direction-position;
+}
+
+@mixin tooltip-right(){
+    border-left: $caret-border;
+    bottom: $caret-alignment-positon;
+    right: $caret-direction-position;
+}
+
+@mixin tooltip-bottom(){
+    border-top: $caret-border;
+    left: $caret-alignment-positon;
+    bottom: $caret-direction-position;
+}
+
+.tooltip-caret {
+    @include tooltip-arrow();
+    &.right {
+        @include tooltip-left();
+    }
+    &.left {
+        @include tooltip-right();
+    }
+    &.top {
+        @include tooltip-bottom();
+    }
+    &.bottom {
+        @include tooltip-top();
+    }
+}

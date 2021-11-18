@@ -1,0 +1,43 @@
+@import "../../utilities/style/colors";
+@import "../../utilities/style/textStyles";
+@import "../../utilities/utilities/sizes";
+
+
+
+  /*SWITCH*/
+  .switch-wrapper {
+    display: flex;
+    cursor: pointer;
+    line-height: normal;
+    &.off {
+        .switch-knob {
+            left: 2px; 
+            background-color: #999;
+          }
+          .switch-button {
+            border: 1px solid #999;
+          }
+    }
+  }
+  .switch-status-text {
+    margin-right: map-get($pv-spaces, 'small');
+  }
+
+  .switch-button {
+    border: 1px solid #8ab98e;
+    border-radius: 18px;
+    height: 16px;
+    width: 46px;
+    position: relative;
+  }
+  .switch-knob {
+    width: map-get($pv-spaces, 'small');
+    height: map-get($pv-spaces, 'small');
+    border-radius: 13px;
+    background-color: $pv-green-regular;
+    position: absolute;
+    left: 30px; 
+    top: 2px;
+    transition: left 250ms;
+  }
+ 

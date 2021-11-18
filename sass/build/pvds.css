@@ -2054,6 +2054,104 @@ fieldset[disabled] .pv-button-ghost:active, .input[disabled]:hover, .input[disab
 /* -- Color white --  */
 /* -- Color navy --  */
 /* -- Color navy --  */
+/* -- Color green --  */
+/* -- Color blue --  */
+/* -- Color red --  */
+/* -- Color yellow --  */
+/* -- Color lilac --  */
+/* -- Color orange --  */
+/* -- Color grayscales --  */
+/* -- Color white --  */
+/* -- Color navy --  */
+/* -- Color navy --  */
+.pv-font-h1, .modal .modal-container .modal-header {
+  font-size: 18px;
+}
+
+.pv-font-h2 {
+  font-size: 16px;
+}
+
+.pv-font-title {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.pv-font-small, .avatar, .avatar.avatar-small, .avatar.avatar-medium, .avatar.avatar-large, .pv-badge-wrap .pv-badge, .pv-counter {
+  font-size: 11px;
+}
+
+.pv-font-regular, .pv-checkbox-label {
+  font-size: 13px;
+  color: #222222;
+}
+
+.pv-font-semibold {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.pv-font-medium {
+  font-size: 16px;
+}
+
+.pv-font-medium {
+  font-size: 18px;
+}
+
+/*SWITCH*/
+.switch-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  line-height: normal;
+}
+
+.switch-wrapper.off .switch-knob {
+  left: 2px;
+  background-color: #999;
+}
+
+.switch-wrapper.off .switch-button {
+  border: 1px solid #999;
+}
+
+.switch-status-text {
+  margin-right: 10px;
+}
+
+.switch-button {
+  border: 1px solid #8ab98e;
+  border-radius: 18px;
+  height: 16px;
+  width: 46px;
+  position: relative;
+}
+
+.switch-knob {
+  width: 10px;
+  height: 10px;
+  border-radius: 13px;
+  background-color: #8AB98E;
+  position: absolute;
+  left: 30px;
+  top: 2px;
+  -webkit-transition: left 250ms;
+  transition: left 250ms;
+}
+
+/* -- Color green --  */
+/* -- Color blue --  */
+/* -- Color red --  */
+/* -- Color yellow --  */
+/* -- Color lilac --  */
+/* -- Color orange --  */
+/* -- Color grayscales --  */
+/* -- Color white --  */
+/* -- Color navy --  */
+/* -- Color navy --  */
 .pv-font-h1, .modal .modal-container .modal-header {
   font-size: 18px;
 }
@@ -2273,5 +2371,109 @@ fieldset[disabled] .pv-button-ghost:active, .input[disabled]:hover, .input[disab
 .textarea.is-error {
   border: 1px solid;
   border-color: #D56261;
+}
+
+/* -- Color green --  */
+/* -- Color blue --  */
+/* -- Color red --  */
+/* -- Color yellow --  */
+/* -- Color lilac --  */
+/* -- Color orange --  */
+/* -- Color grayscales --  */
+/* -- Color white --  */
+/* -- Color navy --  */
+/* -- Color navy --  */
+/* -- Color green --  */
+/* -- Color blue --  */
+/* -- Color red --  */
+/* -- Color yellow --  */
+/* -- Color lilac --  */
+/* -- Color orange --  */
+/* -- Color grayscales --  */
+/* -- Color white --  */
+/* -- Color navy --  */
+/* -- Color navy --  */
+.pv-font-h1, .modal .modal-container .modal-header {
+  font-size: 18px;
+}
+
+.pv-font-h2 {
+  font-size: 16px;
+}
+
+.pv-font-title {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.pv-font-small, .avatar, .avatar.avatar-small, .avatar.avatar-medium, .avatar.avatar-large, .pv-badge-wrap .pv-badge, .pv-counter {
+  font-size: 11px;
+}
+
+.pv-font-regular, .pv-checkbox-label {
+  font-size: 13px;
+  color: #222222;
+}
+
+.pv-font-semibold {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.pv-font-medium {
+  font-size: 16px;
+}
+
+.pv-font-medium {
+  font-size: 18px;
+}
+
+.tooltip-wrapper {
+  position: relative;
+  max-width: 300px;
+  line-height: normal;
+}
+
+.tooltip-body {
+  background-color: #1F2532;
+  border-radius: 2px;
+  color: #ffffff;
+  padding: 10px;
+  position: relative;
+}
+
+.tooltip-caret {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid transparent;
+  position: absolute;
+}
+
+.tooltip-caret.right {
+  border-right: 10px solid #1F2532;
+  bottom: calc(50% - 10px);
+  left: -15px;
+}
+
+.tooltip-caret.left {
+  border-left: 10px solid #1F2532;
+  bottom: calc(50% - 10px);
+  right: -15px;
+}
+
+.tooltip-caret.top {
+  border-top: 10px solid #1F2532;
+  left: calc(50% - 10px);
+  bottom: -15px;
+}
+
+.tooltip-caret.bottom {
+  border-bottom: 10px solid #1F2532;
+  left: calc(50% - 10px);
+  top: -15px;
 }
 /*# sourceMappingURL=pvds.css.map */

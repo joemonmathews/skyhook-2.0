@@ -62,14 +62,26 @@
                 <p></p>
                 <h3 class="article-subtitle">Example</h3>
                 <div class="showComponentWrap-element">
+
+                        <div class="switch-wrapper">
+                                <div class="switch-status-text">On</div>
+                                <div class="switch-button">
+                                        <div class="switch-knob"></div>
+                                </div>
+                        </div>
+
+                        <div class="switch-wrapper off">
+                                <div class="switch-status-text">Off</div>
+                                <div class="switch-button">
+                                        <div class="switch-knob"></div>
+                                </div>
+                        </div>
                  
                 </div>
                 
                         
                 <div class="markup">
-<xmp>
 
-</xmp>
                 </div>
             
             </div>
@@ -79,7 +91,18 @@
 
 <div class="pp-loginpage-footer"><div class="pp-loginpage-footer__brand"><a href="https://www.planview.com/" target="_blank"></a></div></div>
 
-<script src="js/scripts.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
+    <script>
+        $(document).ready(function(){
+            $(".switch-wrapper").click(function(){
+                $(".switch-wrapper on").toggleClass("off");
+                $(".switch-status-text").text($(".switch-status-text").text() == 'Off' ? 'On' : 'Off');
+                $('.input-text').attr('disabled', !$('.input-text').attr('disabled'));
+                $('.copy-link-btn').toggleClass('disable-btn');
+
+            });
+        }); 
+    </script>
 
 </body>
 
