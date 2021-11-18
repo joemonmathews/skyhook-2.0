@@ -799,7 +799,7 @@ fieldset[disabled] .pv-button-ghost:active, .input[disabled]:hover, .input[disab
   color: #222222;
   text-align: center;
   line-height: 16px;
-  border-radius: 8px;
+  border-radius: 18px;
   min-width: 36px;
   padding: 2px 10px;
   display: inline-block;
@@ -2372,7 +2372,6 @@ fieldset[disabled] .pv-button-ghost:active, .input[disabled]:hover, .input[disab
 }
 
 .form-wrapper {
-  padding: 36px;
   max-height: 100vh;
 }
 
@@ -2386,7 +2385,7 @@ fieldset[disabled] .pv-button-ghost:active, .input[disabled]:hover, .input[disab
 }
 
 .form-section {
-  margin-bottom: 36px;
+  margin-top: 10px;
 }
 
 .form-pair-wrapper {
@@ -2425,17 +2424,5 @@ fieldset[disabled] .pv-button-ghost:active, .input[disabled]:hover, .input[disab
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.form-footer {
-  padding: 20px 0;
-  margin: 10px 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  border-top: 1px solid #ccc;
 }
 /*# sourceMappingURL=pvds.css.map */

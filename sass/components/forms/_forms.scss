@@ -11,7 +11,6 @@
 }
 
 .form-wrapper {
-    padding: map-get($pv-spaces, large);
     max-height: 100vh;
 }
 
@@ -25,7 +24,7 @@
 }
 
 .form-section {
-    margin-bottom: map-get($pv-spaces, 'large');
+    margin-top: map-get($pv-spaces, 'small');
 }
 
 // for columns 
@@ -57,11 +56,11 @@
 
 // footer including buttons
 
-.form-footer {
-    padding: map-get($pv-spaces,'medium') 0;
-    margin: map-get($pv-spaces,'small') map-get($pv-spaces,'medium');
-    display: flex;
-    justify-content: right;
-    border-top: 1px solid #ccc;
-}
+// .form-footer {
+//     padding: map-get($pv-spaces,'medium') 0;
+//     margin: map-get($pv-spaces,'small') map-get($pv-spaces,'medium');
+//     display: flex;
+//     justify-content: right;
+//     border-top: 1px solid #ccc;
+// }
 
