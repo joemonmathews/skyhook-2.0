@@ -18,6 +18,10 @@
 	@extend .cursor-pointer;
 	@include pv-border;
 	border-color: transparent;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+	padding: 0 map-get($pv-spaces, small);
 
 
 	&:hover,
@@ -28,20 +32,17 @@
 		border-color: darken($border-color, 8%);
 	}
 
-	&[disabled],
-	fieldset[disabled] & {
-		&,
-		&:hover,
-		&:focus,
-		&:active {
-      		background-color: lighten($background, 20%);
-			border-color: lighten($border-color, 16%);
-			@extend .cursor-default;
-		  
-		}
+	.is-disabled {
+
 	}
-	img, i {
+	 
+	img, i, svg {
 		vertical-align: text-bottom;
+	}
+	svg {
+		path {
+			fill: $pv-white;
+		  }
 	}
 }
 

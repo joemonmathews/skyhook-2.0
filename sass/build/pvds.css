@@ -497,27 +497,7 @@ li::before {
   border-color: #D56261;
 }
 
-.cursor-default, .pv-button-primary[disabled], .pv-button-primary[disabled]:hover, .pv-button-primary[disabled]:focus, .pv-button-primary[disabled]:active,
-fieldset[disabled] .pv-button-primary,
-fieldset[disabled] .pv-button-primary:hover,
-fieldset[disabled] .pv-button-primary:focus,
-fieldset[disabled] .pv-button-primary:active, .pv-button-destructive[disabled], .pv-button-destructive[disabled]:hover, .pv-button-destructive[disabled]:focus, .pv-button-destructive[disabled]:active,
-fieldset[disabled] .pv-button-destructive,
-fieldset[disabled] .pv-button-destructive:hover,
-fieldset[disabled] .pv-button-destructive:focus,
-fieldset[disabled] .pv-button-destructive:active, .pv-button-naked[disabled], .pv-button-naked[disabled]:hover, .pv-button-naked[disabled]:focus, .pv-button-naked[disabled]:active,
-fieldset[disabled] .pv-button-naked,
-fieldset[disabled] .pv-button-naked:hover,
-fieldset[disabled] .pv-button-naked:focus,
-fieldset[disabled] .pv-button-naked:active, .pv-button-naked-inverse[disabled], .pv-button-naked-inverse[disabled]:hover, .pv-button-naked-inverse[disabled]:focus, .pv-button-naked-inverse[disabled]:active,
-fieldset[disabled] .pv-button-naked-inverse,
-fieldset[disabled] .pv-button-naked-inverse:hover,
-fieldset[disabled] .pv-button-naked-inverse:focus,
-fieldset[disabled] .pv-button-naked-inverse:active, .pv-button-ghost[disabled], .pv-button-ghost[disabled]:hover, .pv-button-ghost[disabled]:focus, .pv-button-ghost[disabled]:active,
-fieldset[disabled] .pv-button-ghost,
-fieldset[disabled] .pv-button-ghost:hover,
-fieldset[disabled] .pv-button-ghost:focus,
-fieldset[disabled] .pv-button-ghost:active, .input[disabled]:hover, .input[disabled]:focus, .input[disabled]:active {
+.cursor-default, .input[disabled]:hover, .input[disabled]:focus, .input[disabled]:active {
   cursor: pointer;
 }
 
@@ -806,27 +786,7 @@ fieldset[disabled] .pv-button-ghost:active, .input[disabled]:hover, .input[disab
   vertical-align: baseline;
 }
 
-.cursor-default, .pv-button-primary[disabled], .pv-button-primary[disabled]:hover, .pv-button-primary[disabled]:focus, .pv-button-primary[disabled]:active,
-fieldset[disabled] .pv-button-primary,
-fieldset[disabled] .pv-button-primary:hover,
-fieldset[disabled] .pv-button-primary:focus,
-fieldset[disabled] .pv-button-primary:active, .pv-button-destructive[disabled], .pv-button-destructive[disabled]:hover, .pv-button-destructive[disabled]:focus, .pv-button-destructive[disabled]:active,
-fieldset[disabled] .pv-button-destructive,
-fieldset[disabled] .pv-button-destructive:hover,
-fieldset[disabled] .pv-button-destructive:focus,
-fieldset[disabled] .pv-button-destructive:active, .pv-button-naked[disabled], .pv-button-naked[disabled]:hover, .pv-button-naked[disabled]:focus, .pv-button-naked[disabled]:active,
-fieldset[disabled] .pv-button-naked,
-fieldset[disabled] .pv-button-naked:hover,
-fieldset[disabled] .pv-button-naked:focus,
-fieldset[disabled] .pv-button-naked:active, .pv-button-naked-inverse[disabled], .pv-button-naked-inverse[disabled]:hover, .pv-button-naked-inverse[disabled]:focus, .pv-button-naked-inverse[disabled]:active,
-fieldset[disabled] .pv-button-naked-inverse,
-fieldset[disabled] .pv-button-naked-inverse:hover,
-fieldset[disabled] .pv-button-naked-inverse:focus,
-fieldset[disabled] .pv-button-naked-inverse:active, .pv-button-ghost[disabled], .pv-button-ghost[disabled]:hover, .pv-button-ghost[disabled]:focus, .pv-button-ghost[disabled]:active,
-fieldset[disabled] .pv-button-ghost,
-fieldset[disabled] .pv-button-ghost:hover,
-fieldset[disabled] .pv-button-ghost:focus,
-fieldset[disabled] .pv-button-ghost:active, .input[disabled]:hover, .input[disabled]:focus, .input[disabled]:active {
+.cursor-default, .input[disabled]:hover, .input[disabled]:focus, .input[disabled]:active {
   cursor: pointer;
 }
 
@@ -903,6 +863,16 @@ fieldset[disabled] .pv-button-ghost:active, .input[disabled]:hover, .input[disab
   text-align: center;
   border: 1px solid;
   border-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
 }
 
 .pv-button-primary:hover, .pv-button-primary:focus, .pv-button-primary:active {
@@ -911,17 +881,12 @@ fieldset[disabled] .pv-button-ghost:active, .input[disabled]:hover, .input[disab
   border-color: #70aa75;
 }
 
-.pv-button-primary[disabled], .pv-button-primary[disabled]:hover, .pv-button-primary[disabled]:focus, .pv-button-primary[disabled]:active,
-fieldset[disabled] .pv-button-primary,
-fieldset[disabled] .pv-button-primary:hover,
-fieldset[disabled] .pv-button-primary:focus,
-fieldset[disabled] .pv-button-primary:active {
-  background-color: #cadfcc;
-  border-color: #bdd8bf;
+.pv-button-primary img, .pv-button-primary i, .pv-button-primary svg {
+  vertical-align: text-bottom;
 }
 
-.pv-button-primary img, .pv-button-primary i {
-  vertical-align: text-bottom;
+.pv-button-primary svg path {
+  fill: #ffffff;
 }
 
 .pv-button-destructive {
@@ -938,6 +903,16 @@ fieldset[disabled] .pv-button-primary:active {
   text-align: center;
   border: 1px solid;
   border-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
 }
 
 .pv-button-destructive:hover, .pv-button-destructive:focus, .pv-button-destructive:active {
@@ -946,17 +921,12 @@ fieldset[disabled] .pv-button-primary:active {
   border-color: #cc4241;
 }
 
-.pv-button-destructive[disabled], .pv-button-destructive[disabled]:hover, .pv-button-destructive[disabled]:focus, .pv-button-destructive[disabled]:active,
-fieldset[disabled] .pv-button-destructive,
-fieldset[disabled] .pv-button-destructive:hover,
-fieldset[disabled] .pv-button-destructive:focus,
-fieldset[disabled] .pv-button-destructive:active {
-  background-color: #eab2b2;
-  border-color: #e6a2a1;
+.pv-button-destructive img, .pv-button-destructive i, .pv-button-destructive svg {
+  vertical-align: text-bottom;
 }
 
-.pv-button-destructive img, .pv-button-destructive i {
-  vertical-align: text-bottom;
+.pv-button-destructive svg path {
+  fill: #ffffff;
 }
 
 .pv-button-naked {
@@ -973,6 +943,16 @@ fieldset[disabled] .pv-button-destructive:active {
   text-align: center;
   border: 1px solid;
   border-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
 }
 
 .pv-button-naked:hover, .pv-button-naked:focus, .pv-button-naked:active {
@@ -981,17 +961,12 @@ fieldset[disabled] .pv-button-destructive:active {
   border-color: rgba(0, 0, 0, 0);
 }
 
-.pv-button-naked[disabled], .pv-button-naked[disabled]:hover, .pv-button-naked[disabled]:focus, .pv-button-naked[disabled]:active,
-fieldset[disabled] .pv-button-naked,
-fieldset[disabled] .pv-button-naked:hover,
-fieldset[disabled] .pv-button-naked:focus,
-fieldset[disabled] .pv-button-naked:active {
-  background-color: rgba(51, 51, 51, 0);
-  border-color: rgba(41, 41, 41, 0);
+.pv-button-naked img, .pv-button-naked i, .pv-button-naked svg {
+  vertical-align: text-bottom;
 }
 
-.pv-button-naked img, .pv-button-naked i {
-  vertical-align: text-bottom;
+.pv-button-naked svg path {
+  fill: #ffffff;
 }
 
 .pv-button-naked-inverse {
@@ -1008,6 +983,16 @@ fieldset[disabled] .pv-button-naked:active {
   text-align: center;
   border: 1px solid;
   border-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
 }
 
 .pv-button-naked-inverse:hover, .pv-button-naked-inverse:focus, .pv-button-naked-inverse:active {
@@ -1016,17 +1001,12 @@ fieldset[disabled] .pv-button-naked:active {
   border-color: rgba(0, 0, 0, 0);
 }
 
-.pv-button-naked-inverse[disabled], .pv-button-naked-inverse[disabled]:hover, .pv-button-naked-inverse[disabled]:focus, .pv-button-naked-inverse[disabled]:active,
-fieldset[disabled] .pv-button-naked-inverse,
-fieldset[disabled] .pv-button-naked-inverse:hover,
-fieldset[disabled] .pv-button-naked-inverse:focus,
-fieldset[disabled] .pv-button-naked-inverse:active {
-  background-color: rgba(51, 51, 51, 0);
-  border-color: rgba(41, 41, 41, 0);
+.pv-button-naked-inverse img, .pv-button-naked-inverse i, .pv-button-naked-inverse svg {
+  vertical-align: text-bottom;
 }
 
-.pv-button-naked-inverse img, .pv-button-naked-inverse i {
-  vertical-align: text-bottom;
+.pv-button-naked-inverse svg path {
+  fill: #ffffff;
 }
 
 .pv-button-ghost {
@@ -1043,6 +1023,16 @@ fieldset[disabled] .pv-button-naked-inverse:active {
   text-align: center;
   border: 1px solid;
   border-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 10px;
   border-color: #999999;
 }
 
@@ -1052,17 +1042,12 @@ fieldset[disabled] .pv-button-naked-inverse:active {
   border-color: #858585;
 }
 
-.pv-button-ghost[disabled], .pv-button-ghost[disabled]:hover, .pv-button-ghost[disabled]:focus, .pv-button-ghost[disabled]:active,
-fieldset[disabled] .pv-button-ghost,
-fieldset[disabled] .pv-button-ghost:hover,
-fieldset[disabled] .pv-button-ghost:focus,
-fieldset[disabled] .pv-button-ghost:active {
-  background-color: rgba(51, 51, 51, 0);
-  border-color: #c2c2c2;
+.pv-button-ghost img, .pv-button-ghost i, .pv-button-ghost svg {
+  vertical-align: text-bottom;
 }
 
-.pv-button-ghost img, .pv-button-ghost i {
-  vertical-align: text-bottom;
+.pv-button-ghost svg path {
+  fill: #ffffff;
 }
 
 /* -- Color green --  */
@@ -1623,27 +1608,7 @@ input[type="checkbox"] {
 /* -- Color white --  */
 /* -- Color navy --  */
 /* -- Color navy --  */
-.cursor-default, .pv-button-primary[disabled], .pv-button-primary[disabled]:hover, .pv-button-primary[disabled]:focus, .pv-button-primary[disabled]:active,
-fieldset[disabled] .pv-button-primary,
-fieldset[disabled] .pv-button-primary:hover,
-fieldset[disabled] .pv-button-primary:focus,
-fieldset[disabled] .pv-button-primary:active, .pv-button-destructive[disabled], .pv-button-destructive[disabled]:hover, .pv-button-destructive[disabled]:focus, .pv-button-destructive[disabled]:active,
-fieldset[disabled] .pv-button-destructive,
-fieldset[disabled] .pv-button-destructive:hover,
-fieldset[disabled] .pv-button-destructive:focus,
-fieldset[disabled] .pv-button-destructive:active, .pv-button-naked[disabled], .pv-button-naked[disabled]:hover, .pv-button-naked[disabled]:focus, .pv-button-naked[disabled]:active,
-fieldset[disabled] .pv-button-naked,
-fieldset[disabled] .pv-button-naked:hover,
-fieldset[disabled] .pv-button-naked:focus,
-fieldset[disabled] .pv-button-naked:active, .pv-button-naked-inverse[disabled], .pv-button-naked-inverse[disabled]:hover, .pv-button-naked-inverse[disabled]:focus, .pv-button-naked-inverse[disabled]:active,
-fieldset[disabled] .pv-button-naked-inverse,
-fieldset[disabled] .pv-button-naked-inverse:hover,
-fieldset[disabled] .pv-button-naked-inverse:focus,
-fieldset[disabled] .pv-button-naked-inverse:active, .pv-button-ghost[disabled], .pv-button-ghost[disabled]:hover, .pv-button-ghost[disabled]:focus, .pv-button-ghost[disabled]:active,
-fieldset[disabled] .pv-button-ghost,
-fieldset[disabled] .pv-button-ghost:hover,
-fieldset[disabled] .pv-button-ghost:focus,
-fieldset[disabled] .pv-button-ghost:active, .input[disabled]:hover, .input[disabled]:focus, .input[disabled]:active {
+.cursor-default, .input[disabled]:hover, .input[disabled]:focus, .input[disabled]:active {
   cursor: pointer;
 }
 
