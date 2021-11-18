@@ -2475,6 +2475,54 @@ fieldset[disabled] .pv-button-ghost:active, .input[disabled]:hover, .input[disab
   border-bottom: 10px solid #1F2532;
   left: calc(50% - 10px);
   top: -15px;
+}
+
+/* -- Color green --  */
+/* -- Color blue --  */
+/* -- Color red --  */
+/* -- Color yellow --  */
+/* -- Color lilac --  */
+/* -- Color orange --  */
+/* -- Color grayscales --  */
+/* -- Color white --  */
+/* -- Color navy --  */
+/* -- Color navy --  */
+.pv-font-h1, .modal .modal-container .modal-header {
+  font-size: 18px;
+}
+
+.pv-font-h2 {
+  font-size: 16px;
+}
+
+.pv-font-title {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.pv-font-small, .avatar, .avatar.avatar-small, .avatar.avatar-medium, .avatar.avatar-large, .pv-badge-wrap .pv-badge, .pv-counter {
+  font-size: 11px;
+}
+
+.pv-font-regular, .pv-checkbox-label {
+  font-size: 13px;
+  color: #222222;
+}
+
+.pv-font-semibold {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.pv-font-medium {
+  font-size: 16px;
+}
+
+.pv-font-medium {
+  font-size: 18px;
+}
+
 /* -- Color green --  */
 /* -- Color blue --  */
 /* -- Color red --  */
@@ -2567,7 +2615,7 @@ fieldset[disabled] .pv-button-ghost:active, .input[disabled]:hover, .input[disab
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 0;
+  margin: 0 5px 5px 0;
 }
 
 .form-label > label {
