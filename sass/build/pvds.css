@@ -799,7 +799,7 @@ fieldset[disabled] .pv-button-ghost:active, .input[disabled]:hover, .input[disab
   color: #222222;
   text-align: center;
   line-height: 16px;
-  border-radius: 8px;
+  border-radius: 18px;
   min-width: 36px;
   padding: 2px 10px;
   display: inline-block;
@@ -2475,5 +2475,107 @@ fieldset[disabled] .pv-button-ghost:active, .input[disabled]:hover, .input[disab
   border-bottom: 10px solid #1F2532;
   left: calc(50% - 10px);
   top: -15px;
+/* -- Color green --  */
+/* -- Color blue --  */
+/* -- Color red --  */
+/* -- Color yellow --  */
+/* -- Color lilac --  */
+/* -- Color orange --  */
+/* -- Color grayscales --  */
+/* -- Color white --  */
+/* -- Color navy --  */
+/* -- Color navy --  */
+.border-light {
+  border: 1px solid;
+  border-color: #DDDDDD;
+}
+
+.border-light:hover {
+  border-color: #222222;
+}
+
+.border-light:active {
+  border-color: #8AB98E;
+}
+
+.border-light.error {
+  border-color: #D56261;
+}
+
+/* -- Color green --  */
+/* -- Color blue --  */
+/* -- Color red --  */
+/* -- Color yellow --  */
+/* -- Color lilac --  */
+/* -- Color orange --  */
+/* -- Color grayscales --  */
+/* -- Color white --  */
+/* -- Color navy --  */
+/* -- Color navy --  */
+::-webkit-input-placeholder {
+  color: #DDDDDD;
+}
+:-ms-input-placeholder {
+  color: #DDDDDD;
+}
+::-ms-input-placeholder {
+  color: #DDDDDD;
+}
+::placeholder {
+  color: #DDDDDD;
+}
+
+.form-wrapper {
+  max-height: 100vh;
+}
+
+.form-header {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  padding-left: 10px;
+}
+
+.form-section {
+  margin-top: 10px;
+}
+
+.form-pair-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: 100%;
+  min-width: 300px;
+}
+
+.form-field {
+  margin: 0 10px 20px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  min-width: 300px;
+}
+
+.form-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 0;
+}
+
+.form-label > label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=pvds.css.map */
