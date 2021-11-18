@@ -62,8 +62,6 @@ section {
 
 .showComponentWrap-element {
     padding: 20px ;
-    float: left;
-    width: 40%;
     display: flex;
     /* justify-items: left; */
     flex-direction: row;
@@ -72,12 +70,11 @@ section {
 }
 
 .markup {
-    border: 1px solid #ddd ;
+    border-left: 2px solid #8AB98E ;
     font-size: 13px;
-    background: #f7f7f7;
+    background: #f4f5f6;
     min-height: 400px;
-    float: left;
-    width: 60%;
+  
 }
 
 

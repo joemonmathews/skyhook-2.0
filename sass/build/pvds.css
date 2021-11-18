@@ -872,7 +872,7 @@ li::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 10px;
+  padding: 0 10px 0 0;
 }
 
 .pv-button-primary:hover, .pv-button-primary:focus, .pv-button-primary:active {
@@ -912,7 +912,7 @@ li::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 10px;
+  padding: 0 10px 0 0;
 }
 
 .pv-button-destructive:hover, .pv-button-destructive:focus, .pv-button-destructive:active {
@@ -952,7 +952,7 @@ li::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 10px;
+  padding: 0 10px 0 0;
 }
 
 .pv-button-naked:hover, .pv-button-naked:focus, .pv-button-naked:active {
@@ -967,6 +967,10 @@ li::before {
 
 .pv-button-naked svg path {
   fill: #ffffff;
+}
+
+.pv-button-naked svg path {
+  fill: #999999;
 }
 
 .pv-button-naked-inverse {
@@ -992,7 +996,7 @@ li::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 10px;
+  padding: 0 10px 0 0;
 }
 
 .pv-button-naked-inverse:hover, .pv-button-naked-inverse:focus, .pv-button-naked-inverse:active {
@@ -1003,6 +1007,10 @@ li::before {
 
 .pv-button-naked-inverse img, .pv-button-naked-inverse i, .pv-button-naked-inverse svg {
   vertical-align: text-bottom;
+}
+
+.pv-button-naked-inverse svg path {
+  fill: #ffffff;
 }
 
 .pv-button-naked-inverse svg path {
@@ -1032,7 +1040,7 @@ li::before {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 0 10px;
+  padding: 0 10px 0 0;
   border-color: #999999;
 }
 
@@ -1048,6 +1056,10 @@ li::before {
 
 .pv-button-ghost svg path {
   fill: #ffffff;
+}
+
+.pv-button-ghost svg path {
+  fill: #999999;
 }
 
 /* -- Color green --  */

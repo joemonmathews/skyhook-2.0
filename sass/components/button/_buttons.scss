@@ -21,7 +21,7 @@
 	display: flex;
     justify-content: center;
     align-items: center;
-	padding: 0 map-get($pv-spaces, small);
+	padding: 0 map-get($pv-spaces, small) 0 0;
 
 
 	&:hover,
@@ -55,12 +55,27 @@
 }
 .pv-button-naked {
     @include button-variant($pv-grayscale-2, transparent, transparent);
+	svg {
+		path {
+			fill: $pv-grayscale-3;
+		  }
+	}
 }
 .pv-button-naked-inverse {
     @include button-variant($pv-white, transparent, transparent);
+	svg {
+		path {
+			fill: $pv-white;
+		  }
+	}
 }
 .pv-button-ghost {
 	@include button-variant($pv-grayscale-2, transparent, $pv-grayscale-3);
 	border-color: $pv-grayscale-3;
-
+	
+	svg {
+		path {
+			fill: $pv-grayscale-3;
+		  }
+	}
 }
