@@ -548,6 +548,18 @@ li::before {
   height: 24px;
 }
 
+.has-spacing {
+  padding: 10px;
+}
+
+.has-spacing-left {
+  padding-left: 10px;
+}
+
+.has-spacing-right {
+  padding-right: 10px;
+}
+
 /* -- Color green --  */
 /* -- Color blue --  */
 /* -- Color red --  */
@@ -741,6 +753,18 @@ li::before {
 
 .pv-font-medium {
   font-size: 18px;
+}
+
+.has-spacing {
+  padding: 10px;
+}
+
+.has-spacing-left {
+  padding-left: 10px;
+}
+
+.has-spacing-right {
+  padding-right: 10px;
 }
 
 /* -- Color green --  */
@@ -1443,6 +1467,18 @@ input[type="checkbox"] {
   border-color: #D56261;
 }
 
+.has-spacing {
+  padding: 10px;
+}
+
+.has-spacing-left {
+  padding-left: 10px;
+}
+
+.has-spacing-right {
+  padding-right: 10px;
+}
+
 /* -- Color green --  */
 /* -- Color blue --  */
 /* -- Color red --  */
@@ -1608,6 +1644,18 @@ input[type="checkbox"] {
 
 .border-light.error {
   border-color: #D56261;
+}
+
+.has-spacing {
+  padding: 10px;
+}
+
+.has-spacing-left {
+  padding-left: 10px;
+}
+
+.has-spacing-right {
+  padding-right: 10px;
 }
 
 /* -- Color green --  */
@@ -1929,7 +1977,12 @@ input[type="checkbox"] {
 
 .modal .modal-container .modal-footer {
   padding: 20px;
-  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 /* -- Color green --  */
@@ -2192,6 +2245,18 @@ input[type="checkbox"] {
   border-color: #D56261;
 }
 
+.has-spacing {
+  padding: 10px;
+}
+
+.has-spacing-left {
+  padding-left: 10px;
+}
+
+.has-spacing-right {
+  padding-right: 10px;
+}
+
 /* -- Color green --  */
 /* -- Color blue --  */
 /* -- Color red --  */
@@ -2310,6 +2375,18 @@ input[type="checkbox"] {
 
 .border-light.error {
   border-color: #D56261;
+}
+
+.has-spacing {
+  padding: 10px;
+}
+
+.has-spacing-left {
+  padding-left: 10px;
+}
+
+.has-spacing-right {
+  padding-right: 10px;
 }
 
 /* -- Color green --  */
@@ -2525,6 +2602,18 @@ input[type="checkbox"] {
 
 .border-light.error {
   border-color: #D56261;
+}
+
+.has-spacing {
+  padding: 10px;
+}
+
+.has-spacing-left {
+  padding-left: 10px;
+}
+
+.has-spacing-right {
+  padding-right: 10px;
 }
 
 /* -- Color green --  */

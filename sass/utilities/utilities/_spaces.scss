@@ -17,4 +17,14 @@ $pv-spaces: (
 // }
 
 
+.has-spacing {
+	padding: map-get($pv-spaces, small)
+}
 
+.has-spacing-left {
+	padding-left: map-get($pv-spaces, small)
+}
+
+.has-spacing-right {
+	padding-right: map-get($pv-spaces, small)
+}

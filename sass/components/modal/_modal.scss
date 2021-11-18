@@ -70,7 +70,8 @@
       
         .modal-footer {
           padding: map-get($pv-spaces, medium);
-          text-align: right;
+          display: flex;
+          justify-content: end;
         }
       }
 
