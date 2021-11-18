@@ -2410,7 +2410,6 @@ fieldset[disabled] .pv-button-ghost:active, .input[disabled]:hover, .input[disab
 }
 
 .form-label {
-  font-size: 11px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

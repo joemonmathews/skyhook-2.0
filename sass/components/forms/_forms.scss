@@ -45,7 +45,6 @@
 }
 
 .form-label {
-    font-size: $font-small;
     display: flex;
     margin: 0 map-get($pv-spaces, xsmall) map-get($pv-spaces, 'xsmall') 0;
     > label {
