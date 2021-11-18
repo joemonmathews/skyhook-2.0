@@ -1,8 +1,8 @@
 
 
 body {
-    font-family: "ProximaNova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    background: #f4f4f4;
+    font-family: "ProximaNova", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background: #fff;
     color: black;
     font-size: 13px;
     line-height: 26px;
@@ -40,11 +40,11 @@ section {
 
 .styles-container {
     padding-top: 40px;
-    width: 1086px;
+    width: 700px;
 }
 
 .wrap {
-    width: 1366px;
+    width: 980px;
     margin: 0 auto;
     /* height: 100vh; */
     display: flex;
@@ -90,12 +90,15 @@ section {
     line-height: 42px;
     font-weight: normal;
     text-transform: none;
+    
 }
 
 h2 {
     font-size: 24px;
     line-height: 30px;
     font-weight: 400;
+    color: #878787;
+    margin-top: 30px;
 }
 
 code {
@@ -114,7 +117,8 @@ code {
     font-size: 16px;
     font-weight: 400;
     line-height: 16px;
-    margin: 50px 0 10px 0;
+    color: #878787;
+    /* margin: 50px 0 10px 0; */
 
 }
 dl {
@@ -134,9 +138,10 @@ dt {
     font-weight: 500;
 }
 p {
-    font-size: 16px;
-    font-weight: 100;
+    font-size: 15px;
+    font-weight: 300;
     margin: 30px 0;
+    line-height: 29px;
 }
 
 
