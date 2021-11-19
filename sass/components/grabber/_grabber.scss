@@ -13,9 +13,6 @@ $handle-size: 7px;
         .grabber-handle {
             width: 100%;
             height: $handle-size;
-            background-color: #999;
-            display: flex;
-            justify-content: center;
         }
         .grabber-dots {
             flex-direction: row;
@@ -45,12 +42,18 @@ $handle-size: 7px;
     }
     &.is-normal {
         .grabber-handle {
-            background-color: #999;
+            background-color: $pv-grayscale-5;
+        }
+        .grabber-dot {
+            background-color: $pv-grayscale-3;
         }
     }
     &.is-hover {
         .grabber-handle {
             background-color: $pv-green-regular;
+        }
+        .grabber-dot {
+            background-color: $pv-white;
         }
     }
 }
@@ -66,7 +69,6 @@ $handle-size: 7px;
 .grabber-dot {
     width: $dot-size;
     height: $dot-size;
-    background-color: $pv-white;
     border-radius: $border-radius;
 
 }
