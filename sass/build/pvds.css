@@ -2414,6 +2414,23 @@ input[type="checkbox"] {
           transform: translate(-100%, -50%) scale(1);
 }
 
+.is-spinning {
+  -webkit-animation: spin 1s linear infinite;
+  animation: spin 1s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
 /* -- Color green --  */
 /* -- Color blue --  */
 /* -- Color red --  */
