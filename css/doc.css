@@ -81,6 +81,7 @@ section {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
 }
 
 .markup {
@@ -190,6 +191,13 @@ p {
 .mr36 {
     margin-right:36px ;
 }
+.mb20 {
+    margin-bottom: 20px;
+}
+
+.tal {
+    text-align: left;
+}
 
 
 .clearfix: before, .clearfix: after {
@@ -212,6 +220,15 @@ p {
     text-align: center;
 }
 
+
+
+/* hacks for the styleguide page */
+
 .modal {
     position: relative;
 }
+
+.fieldWrap {
+    margin-bottom: 20px;
+}
+

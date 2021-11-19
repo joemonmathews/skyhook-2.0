@@ -27,16 +27,17 @@
                     <dd><a href="#button">Button</a></dd>
                     <dd><a href="#checkbox">checkbox</a></dd>
                     <dd><a href="#circle-progress-bar">Circle progress bar</a></dd>
-                    <dd><a href="#context-menu">Context menu</a></dd>
-                    <dd><a href="#date-picker">Date picker</a></dd>
+                    <!-- <dd><a href="#context-menu">Context menu</a></dd> -->
+                    <!-- <dd><a href="#date-picker">Date picker</a></dd> -->
                     <dd><a href="#dropdown">Dropdown</a></dd>
                     <dd><a href="#grabber">Grabber</a></dd>
+                    <dd><a href="#grid">Grid</a></dd>
                     <dd><a href="#group-input">Group input</a></dd>
-                    <dd><a href="#hide-show">Hide/show all</a></dd>
+                    <dd><a href="#showhide">Hide/show all</a></dd>
                     <dd><a href="#icon">Icon</a></dd>
                     <dd><a href="#input">Input</a></dd>
-                    <dd><a href="#input-number">Input number</a></dd>
-                    <dd><a href="#input-time">Input time</a></dd>
+                    <!-- <dd><a href="#input-number">Input number</a></dd>
+                    <dd><a href="#input-time">Input time</a></dd> -->
                     <dd><a href="#message-center">Message center</a></dd>
                     <dd><a href="#modal">Modal</a></dd>
                     <dd><a href="#overlay-background">Overlay background</a></dd>
@@ -46,6 +47,7 @@
                     <dd><a href="#spinner">Spinner</a></dd>
                     <dd><a href="#switch">Switch</a></dd>
                     <dd><a href="#tab-group">Tab group</a></dd>
+                    <dd><a href="#table">Table</a></dd>
                     <dd><a href="#tag">Tag</a></dd>
                     <dd><a href="#text-area">Text area</a></dd>
                     <dd><a href="#text-editor">Text editor</a></dd>
@@ -74,6 +76,12 @@
           <figure class="avatar avatar-large">
                   <img src="../img/c.jpg" alt="...">
           </figure>
+          <figure class="avatar avatar-xlarge">
+            <img src="../img/a.jpg" alt="...">
+          </figure>
+          <div class="avatar avatar-xsmall label-green">
+            <span>MM</span>
+          </div>
       </div>
           <div class="markup">
   <xmp>
@@ -437,14 +445,11 @@ Primary
     <a name="counter"></a>
   <div class="showComponentWrap">
       <h1 class="article-title">Counter</h1>
-
-      <h2>Usage</h2>
       <p>
               Vestibulum tristique molestie ex, sed tincidunt diam egestas eu. 
               Pellentesque bibendum, nulla auctor finibus dictum, arcu urna efficitur risus, 
               in lacinia turpis nibh maximus lorem. 
       </p>
-      <h3 class="article-subtitle">Example</h3>
       <div class="showComponentWrap-element">
           <div class="pv-counter primary">2</div>
           <div class="pv-counter critical">9</div>
@@ -556,13 +561,38 @@ Primary
 <!-- /dropdown -->
 
 <section class="styles-container">
+  <a name="showhide"></a>
+<div class="showComponentWrap">
+    <h1 class="article-title">Show and hide</h1>
+    <p>
+            Vestibulum tristique molestie ex, sed tincidunt diam egestas eu. 
+            Pellentesque bibendum, nulla auctor finibus dictum, arcu urna efficitur risus, 
+            in lacinia turpis nibh maximus lorem. 
+    </p>
+    <div class="showComponentWrap-element">
+        <a href="#" class="show-hide">Show</a>
+        <a href="#" class="show-hide">Hide</a>
+    </div>
+
+
+    <div class="markup">
+<xmp>
+<div class="pv-counter primary">2</div>
+<div class="pv-counter critical">9</div>
+</xmp>
+    </div>
+
+    </div>
+
+</section>
+ <!-- show/hide -->
+<section class="styles-container">
     <a name="grid"></a>
   <div class="showComponentWrap">
       <h1 class="article-title">Grid system</h1>
 
       <p>Vestibulum tristique molestie ex, sed tincidunt diam egestas eu. Pellentesque bibendum, nulla auctor finibus dictum, arcu urna efficitur risus, in lacinia turpis nibh maximus lorem.
       </p>
-      <h3 class="article-subtitle">Example</h3>
       <div class="">
           <div class="row">
               <div class="col bg-1 c12">12</div>
@@ -643,9 +673,14 @@ Primary
       </p>
       
       <div class="showComponentWrap-element">
-              <input type="text" class="input">
+              <div class="pv-font-semibold tal">
+                Input text
+              </div>
+              <input type="text" class="input mb20">
 
-              <br/><br/>
+              <div class="pv-font-semibold tal">
+                Date picker
+              </div>
               <div class="fieldWrap">
                       
                       <div class="field has-icon-left has-icon-right">
@@ -676,8 +711,10 @@ Primary
                       </span>
               </div>
 
-
-              <br/><br/>
+              <div class="pv-font-semibold tal">
+                Input number
+              </div>
+              
               <div class="fieldWrap">
                       <div class="field has-icon-left has-icon-right">
                               <input type="text" class="input" placeholder="">
@@ -705,7 +742,10 @@ Primary
                       </span>
               </div>
 
-              <br/><br/>
+              <div class="pv-font-semibold tal">
+                Input time
+              </div>
+
               <div class="fieldWrap">
                       <div class="field has-icon-left has-icon-right">
                               <input type="text" class="input" placeholder="">
@@ -835,8 +875,6 @@ Primary
       <p>
         Vestibulum tristique molestie ex, sed tincidunt diam egestas eu. Pellentesque bibendum, nulla auctor finibus dictum, arcu urna efficitur risus, in lacinia turpis nibh maximus lorem.
       </p>
-      <h3 class="article-subtitle">Example</h3>
-      <h3 class="article-subtitle">Example</h3>
       <div class="showComponentWrap-element">
               <div class="pv-popover top">
                       <button class="pv-button-ghost has-spacing-left mr36">Popover top</button>

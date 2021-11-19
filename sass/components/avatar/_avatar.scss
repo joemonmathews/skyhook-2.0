@@ -6,23 +6,28 @@
 
 @mixin avatar-base($size:(map-get($pv-sizes, xsmall))) {
     @extend .pv-font-small;
-    color: $text-primary;
+    color: $pv-white;
     text-align: center;
     height: map-get($pv-sizes, small);
     width: map-get($pv-sizes, small);
+    border-radius: $border-radius;
+    
   }
 
   .avatar {
     @include avatar-base();    
-    display: table-cell;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
     img {
         border-radius: $border-radius;
         vertical-align: middle;
     }
+    
   
     &.avatar-small {
-      @include avatar-base(map-get($pv-sizes, xsmall));
+      @include avatar-base(map-get($pv-sizes, small));
 
       img {
         height: map-get($pv-sizes, xsmall);
@@ -41,7 +46,8 @@
     }
 
     &.avatar-large {
-      @include avatar-base(map-get($pv-sizes, large));
+      width: 56px;
+      height: 56px;
 
       img {
         height: map-get($pv-sizes, small);
@@ -49,15 +55,13 @@
       }
     }
 
-    // &.avatar-xlarge {
-    //   @include avatar-base(map-get($pv-sizes, xlarge));
-    // }
+    &.avatar-xlarge {
+      @include avatar-base(map-get($pv-sizes, xlarge));
+    }
   
     img {
-      border-radius: $border-radius;
-      height: 100%;
-      position: relative;
-      width: 100%;
+      width: 72px;
+      height: 72px;
     }
   
     // &[data-initial]::before {
@@ -65,6 +69,8 @@
     // }
   }
 
-
+.label-green {
+  background: $pv-green-regular;
+}
 
   

@@ -91,7 +91,7 @@ $text-warning: $pv-orange-regular;
 
 $text-alert: $pv-red-regular;
 
-$text-normal: $pv-green-regular;
+$text-link: $pv-green-regular;
 
 $text-hover: $pv-green-dark;
 
@@ -99,4 +99,13 @@ $text-hover: $pv-green-dark;
 @mixin text-highlight {
     color: $text-inverse;
     background: $pv-green-regular;
+}
+
+@mixin link {
+    color: $text-link !important;
+
+    &:hover {
+        color: $text-hover !important;
+    }
+
 }

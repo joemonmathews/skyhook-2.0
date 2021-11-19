@@ -1,0 +1,18 @@
+
+@import "../../utilities/utilities/sizes";
+@import "../../utilities/style/textStyles";
+@import "../../utilities/utilities/borders";
+@import "../../utilities/utilities/shadows";
+@import "../../utilities/utilities/spaces";
+@import "../../utilities/style/colors";
+@import "../../utilities/utilities/cursors";
+
+
+.show-hide {
+    line-height: map-get($pv-sizes, small);
+    width: 100%;
+    background: pv-white;
+    padding-left: map-get($pv-spaces, small);
+    @include link();
+}
+
