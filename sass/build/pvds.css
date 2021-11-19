@@ -2746,6 +2746,7 @@ input[type="checkbox"] {
   background-color: #ffffff;
   resize: none;
   text-align: left;
+  border: 1px solid #999999;
 }
 
 .textarea.is-focused, .textarea .is-focus-selected {
@@ -2963,16 +2964,16 @@ input[type="checkbox"] {
 /* -- Color navy --  */
 /* -- Color navy --  */
 ::-webkit-input-placeholder {
-  color: #DDDDDD;
+  color: #999999;
 }
 :-ms-input-placeholder {
-  color: #DDDDDD;
+  color: #999999;
 }
 ::-ms-input-placeholder {
-  color: #DDDDDD;
+  color: #999999;
 }
 ::placeholder {
-  color: #DDDDDD;
+  color: #999999;
 }
 
 .form-wrapper {
