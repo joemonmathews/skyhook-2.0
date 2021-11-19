@@ -1,0 +1,72 @@
+@import "../../utilities/style/colors";
+@import "../../utilities/style/textStyles";
+@import "../../utilities/utilities/sizes";
+@import "../../utilities/utilities/borders";
+
+$dot-size: 3px;
+$handle-size: 7px;
+
+.grabber-wrapper {
+
+    &.horizontal {
+        width: map-get($pv-sizes, 'medium' );
+        .grabber-handle {
+            width: 100%;
+            height: $handle-size;
+            background-color: #999;
+            display: flex;
+            justify-content: center;
+        }
+        .grabber-dots {
+            flex-direction: row;
+        }
+        .grabber-dot {
+            margin-left: $dot-size;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+    }
+    &.vertical {
+        height: map-get($pv-sizes, 'medium' );
+        .grabber-handle {
+            width: $handle-size;
+            height: 100%;
+        }
+        .grabber-dots {
+            flex-direction: column;
+        }
+        .grabber-dot {
+            margin-top: $dot-size;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+    }
+    &.is-normal {
+        .grabber-handle {
+            background-color: #999;
+        }
+    }
+    &.is-hover {
+        .grabber-handle {
+            background-color: $pv-green-regular;
+        }
+    }
+}
+.grabber-handle {
+    display: flex;
+    justify-content: center;
+}
+.grabber-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grabber-dot {
+    width: $dot-size;
+    height: $dot-size;
+    background-color: $pv-white;
+    border-radius: $border-radius;
+
+}

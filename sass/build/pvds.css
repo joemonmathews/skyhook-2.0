@@ -1560,6 +1560,180 @@ input[type="checkbox"] {
 /* -- Color white --  */
 /* -- Color navy --  */
 /* -- Color navy --  */
+/* -- Color green --  */
+/* -- Color blue --  */
+/* -- Color red --  */
+/* -- Color yellow --  */
+/* -- Color lilac --  */
+/* -- Color orange --  */
+/* -- Color grayscales --  */
+/* -- Color white --  */
+/* -- Color navy --  */
+/* -- Color navy --  */
+.pv-font-h1, .modal .modal-container .modal-header {
+  font-size: 18px;
+}
+
+.pv-font-h2 {
+  font-size: 16px;
+}
+
+.pv-font-title {
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.pv-font-small, .avatar, .avatar.avatar-small, .avatar.avatar-medium, .avatar.avatar-xlarge, .pv-badge-wrap .pv-badge, .pv-counter {
+  font-size: 11px;
+}
+
+.pv-font-regular, .pv-checkbox-label {
+  font-size: 13px;
+  color: #222222;
+}
+
+.pv-font-semibold {
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.pv-font-medium {
+  font-size: 16px;
+}
+
+.pv-font-medium {
+  font-size: 18px;
+}
+
+/* -- Color green --  */
+/* -- Color blue --  */
+/* -- Color red --  */
+/* -- Color yellow --  */
+/* -- Color lilac --  */
+/* -- Color orange --  */
+/* -- Color grayscales --  */
+/* -- Color white --  */
+/* -- Color navy --  */
+/* -- Color navy --  */
+.border-light {
+  border: 1px solid;
+  border-color: #DDDDDD;
+}
+
+.border-light:hover {
+  border-color: #222222;
+}
+
+.border-light:active {
+  border-color: #8AB98E;
+}
+
+.border-light.error {
+  border-color: #D56261;
+}
+
+.grabber-wrapper.horizontal {
+  width: 46px;
+}
+
+.grabber-wrapper.horizontal .grabber-handle {
+  width: 100%;
+  height: 7px;
+  background-color: #999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.grabber-wrapper.horizontal .grabber-dots {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.grabber-wrapper.horizontal .grabber-dot {
+  margin-left: 3px;
+}
+
+.grabber-wrapper.horizontal .grabber-dot:first-child {
+  margin-left: 0;
+}
+
+.grabber-wrapper.vertical {
+  height: 46px;
+}
+
+.grabber-wrapper.vertical .grabber-handle {
+  width: 7px;
+  height: 100%;
+}
+
+.grabber-wrapper.vertical .grabber-dots {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.grabber-wrapper.vertical .grabber-dot {
+  margin-top: 3px;
+}
+
+.grabber-wrapper.vertical .grabber-dot:first-child {
+  margin-top: 0;
+}
+
+.grabber-wrapper.is-normal .grabber-handle {
+  background-color: #999;
+}
+
+.grabber-wrapper.is-hover .grabber-handle {
+  background-color: #8AB98E;
+}
+
+.grabber-handle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.grabber-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.grabber-dot {
+  width: 3px;
+  height: 3px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+/* -- Color green --  */
+/* -- Color blue --  */
+/* -- Color red --  */
+/* -- Color yellow --  */
+/* -- Color lilac --  */
+/* -- Color orange --  */
+/* -- Color grayscales --  */
+/* -- Color white --  */
+/* -- Color navy --  */
+/* -- Color navy --  */
 .pv-font-h1, .modal .modal-container .modal-header {
   font-size: 18px;
 }

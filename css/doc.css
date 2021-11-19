@@ -232,3 +232,20 @@ p {
     margin-bottom: 20px;
 }
 
+.component-states-wrapper {
+border: 1px solid red;  
+}
+.component-state {
+    display: flex;
+}
+
+.component-sub-states-wrapper {
+    display: flex;
+}
+.component-sub-state {
+    margin-left: 20px;
+}
+
+.component-sub-state:first-child {
+    margin-left: 0;
+}
