@@ -1909,6 +1909,8 @@ input[type="checkbox"] {
   overflow-y: auto;
   overflow-x: hidden;
   background: rgba(34, 34, 34, 0.75);
+  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.2);
 }
 
 .modal:target, .modal.active {
@@ -1920,8 +1922,6 @@ input[type="checkbox"] {
 }
 
 .modal .modal-container {
-  -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.2);
   background: #ffffff;
   border-radius: 2px;
   display: -webkit-box;
@@ -2691,5 +2691,209 @@ input[type="checkbox"] {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+/* -- Color green --  */
+/* -- Color blue --  */
+/* -- Color red --  */
+/* -- Color yellow --  */
+/* -- Color lilac --  */
+/* -- Color orange --  */
+/* -- Color grayscales --  */
+/* -- Color white --  */
+/* -- Color navy --  */
+/* -- Color navy --  */
+.border-light {
+  border: 1px solid;
+  border-color: #DDDDDD;
+}
+
+.border-light:hover {
+  border-color: #222222;
+}
+
+.border-light:active {
+  border-color: #8AB98E;
+}
+
+.border-light.error {
+  border-color: #D56261;
+}
+
+.table {
+  border-spacing: 0;
+  border: 1px solid;
+  border: 1px solid;
+  border-color: #999999;
+  width: 100%;
+}
+
+.table:hover {
+  border-color: #222222;
+}
+
+.table:active {
+  border-color: #8AB98E;
+}
+
+.table.error {
+  border-color: #D56261;
+}
+
+.table thead tr th, .table thead tr td, .table tbody tr th, .table tbody tr td {
+  vertical-align: middle;
+  border: 1px solid;
+  border: 1px solid;
+  border-color: #999999;
+  padding: 10px;
+}
+
+.table thead tr th:hover, .table thead tr td:hover, .table tbody tr th:hover, .table tbody tr td:hover {
+  border-color: #222222;
+}
+
+.table thead tr th:active, .table thead tr td:active, .table tbody tr th:active, .table tbody tr td:active {
+  border-color: #8AB98E;
+}
+
+.table thead tr th.error, .table thead tr td.error, .table tbody tr th.error, .table tbody tr td.error {
+  border-color: #D56261;
+}
+
+.table tbody tr td {
+  background: #fff;
+}
+
+.row {
+  margin: 1% 0;
+  overflow: auto;
+  line-height: 2em;
+}
+
+.col {
+  float: left;
+  margin: 0 1%;
+}
+
+.c1 {
+  width: 6.33%;
+}
+
+.c2 {
+  width: 14.66%;
+}
+
+.c3 {
+  width: 23%;
+}
+
+.c4 {
+  width: 31.33%;
+}
+
+.c5 {
+  width: 39.66%;
+}
+
+.c6 {
+  width: 48%;
+}
+
+.c7 {
+  width: 56.33%;
+}
+
+.c8 {
+  width: 64.66%;
+}
+
+.c9 {
+  width: 73%;
+}
+
+.c10 {
+  width: 81.33%;
+}
+
+.c11 {
+  width: 89.66%;
+}
+
+.c12 {
+  width: 98%;
+}
+
+@media (max-width: 870px) {
+  .row .col {
+    width: 100%;
+  }
+}
+
+/* =============================================================================
+- Tools 
+============================================================================= */
+.row {
+  margin: 1% 0;
+  overflow: auto;
+  line-height: 2em;
+}
+
+.col {
+  float: left;
+  margin: 0 1%;
+}
+
+.c1 {
+  width: 6.33%;
+}
+
+.c2 {
+  width: 14.66%;
+}
+
+.c3 {
+  width: 23%;
+}
+
+.c4 {
+  width: 31.33%;
+}
+
+.c5 {
+  width: 39.66%;
+}
+
+.c6 {
+  width: 48%;
+}
+
+.c7 {
+  width: 56.33%;
+}
+
+.c8 {
+  width: 64.66%;
+}
+
+.c9 {
+  width: 73%;
+}
+
+.c10 {
+  width: 81.33%;
+}
+
+.c11 {
+  width: 89.66%;
+}
+
+.c12 {
+  width: 98%;
+}
+
+@media (max-width: 870px) {
+  .row .col {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=pvds.css.map */

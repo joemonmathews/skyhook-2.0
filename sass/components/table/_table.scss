@@ -1,11 +1,19 @@
+@import "../../utilities/utilities/borders";
+
+
 
 .table {
 	  border-spacing: 0;
+	  @include pv-border();
+	  @include border-normal();
+	  width: 100%;
 	thead, tbody {
 		tr{
 			th, td {
 				vertical-align: middle;
-				border:none;
+				@include pv-border();
+				@include border-normal();
+				padding: map-get($pv-spaces, small);
 				&:nth-last-child(1){
 				}
 			}
@@ -15,7 +23,9 @@
 		tr {
 			td {
 				background:#fff;
-				&:nth-child(1){
+				
+
+				&:nth-child(1) {
 				}
 				&:nth-last-child(1){
 				}

@@ -16,6 +16,7 @@
     overflow-y: auto;
     overflow-x: hidden;
     background: rgba($pv-grayscale-1, .75);
+    @include box-shadow-regular;
   
     &:target,
     &.active {
@@ -25,7 +26,7 @@
     }
 
     .modal-container {
-        @include box-shadow-regular;
+      
         background: $pv-white;
         border-radius: $base-border-radius;
         display: flex;
