@@ -255,8 +255,14 @@ p {
 
 .variants-wrapper {
     display: flex;
+    margin-bottom: 20px;
 }
-
+.variant-component  {
+    padding: 20px;
+}
+.inverse-variant {
+    background-color: #999;
+}
 .variants-component-wrapper {
     margin-left: 20px;
     display: flex;

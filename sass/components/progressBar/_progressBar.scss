@@ -1,0 +1,59 @@
+@import "../../utilities/style/colors";
+@import "../../utilities/utilities/sizes";
+
+.pb-w-10 {
+    width: 10%;
+}
+.pb-w-20 {
+    width: 20%;
+}
+.pb-w-30 {
+    width: 30%;
+}
+
+.pb-green {
+    background-color: $pv-green-regular;
+}
+.pb-yellow {
+    background-color: $pv-yellow-regular;
+}
+.pb-blue {
+    background-color: $pv-blue-regular;
+}
+
+.pb-white {
+    background-color: $pv-white;
+}
+
+
+.progress-bar-wrapper {
+    width: 200px;
+    &.inverse {
+        .progress-bar-background {
+            background-color: $pv-grayscale-2;
+        }
+    }
+}
+
+.progress-bar-background {
+    background-color: $pv-grayscale-4;
+    width: 100%;
+    height: map-get($pv-sizes, 'xxsmall');
+    border-radius: map-get($pv-sizes, 'xxsmall')/2;
+}
+
+.progress-bar-foreground {
+    height: map-get($pv-sizes, 'xxsmall');
+    border-radius: map-get($pv-sizes, 'xxsmall')/2 0 0 map-get($pv-sizes, 'xxsmall')/2;
+    transition: width 250ms;
+}
+.progress-bar-foreground-bars {
+    display: flex;
+    height: map-get($pv-sizes, 'xxsmall');
+    .pb {
+        &:first-child {
+            border-radius: map-get($pv-sizes, 'xxsmall')/2 0 0 map-get($pv-sizes, 'xxsmall')/2;
+        }
+    }
+  
+}

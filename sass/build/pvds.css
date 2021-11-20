@@ -2414,6 +2414,77 @@ input[type="checkbox"] {
           transform: translate(-100%, -50%) scale(1);
 }
 
+/* -- Color green --  */
+/* -- Color blue --  */
+/* -- Color red --  */
+/* -- Color yellow --  */
+/* -- Color lilac --  */
+/* -- Color orange --  */
+/* -- Color grayscales --  */
+/* -- Color white --  */
+/* -- Color navy --  */
+/* -- Color navy --  */
+.pb-w-10 {
+  width: 10%;
+}
+
+.pb-w-20 {
+  width: 20%;
+}
+
+.pb-w-30 {
+  width: 30%;
+}
+
+.pb-green {
+  background-color: #8AB98E;
+}
+
+.pb-yellow {
+  background-color: #FADA67;
+}
+
+.pb-blue {
+  background-color: #608EB6;
+}
+
+.pb-white {
+  background-color: #ffffff;
+}
+
+.progress-bar-wrapper {
+  width: 200px;
+}
+
+.progress-bar-wrapper.inverse .progress-bar-background {
+  background-color: #777777;
+}
+
+.progress-bar-background {
+  background-color: #CCCCCC;
+  width: 100%;
+  height: 6px;
+  border-radius: 3px;
+}
+
+.progress-bar-foreground {
+  height: 6px;
+  border-radius: 3px 0 0 3px;
+  -webkit-transition: width 250ms;
+  transition: width 250ms;
+}
+
+.progress-bar-foreground-bars {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 6px;
+}
+
+.progress-bar-foreground-bars .pb:first-child {
+  border-radius: 3px 0 0 3px;
+}
+
 .is-spinning {
   -webkit-animation: spin 1s linear infinite;
   animation: spin 1s linear infinite;
