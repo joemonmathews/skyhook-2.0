@@ -126,7 +126,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class='size-name'>Xlarge</div>
+                            <div class='size-name'>Letters</div>
                         </div>
                     </div>
                    </div>
@@ -498,8 +498,22 @@
                           in lacinia turpis nibh maximus lorem. 
                   </p>
                   <div class="showComponentWrap-element">
-                      <div class="pv-counter primary">2</div>
-                      <div class="pv-counter critical">9</div>
+                      <div class='variants-wrapper'>
+                        <div class='variants-component-wrapper'>
+                            <div class='variant-component'>
+                                <div class="pv-counter primary">2</div>
+                            </div>
+                            <div class='size-name'>Primary</div>
+                        </div>
+                    </div>
+                    <div class='variants-wrapper'>
+                        <div class='variants-component-wrapper'>
+                            <div class='variant-component'>
+                                <div class="pv-counter critical">9</div>
+                            </div>
+                            <div class='size-name'>critical</div>
+                        </div>
+                    </div>
                   </div>
             
             
@@ -617,11 +631,9 @@
                         in lacinia turpis nibh maximus lorem. 
                     </p>
                     <div class="showComponentWrap-element">
-            
-                        <div clas='component-state'>
-                            <h3>Horizontal</h3>
-                            <div class='component-sub-states-wrapper'>
-                                <div class='component-sub-state'>
+                        <div class='variants-wrapper'>
+                            <div class='variants-component-wrapper'>
+                                <div class='variant-component'>
                                     <div class='grabber-wrapper horizontal is-normal'>
                                         <div class='grabber-handle cursor-grab'>
                                             <div class='grabber-dots'>
@@ -631,9 +643,13 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <h4>Normal</h4>
                                 </div>
-                                <div class='component-sub-state'>
+                                <div class='size-name'>Normal</div>
+                            </div>
+                        </div>
+                        <div class='variants-wrapper'>
+                            <div class='variants-component-wrapper'>
+                                <div class='variant-component'>
                                     <div class='grabber-wrapper horizontal is-hover'>
                                         <div class='grabber-handle cursor-grab'>
                                             <div class='grabber-dots '>
@@ -643,14 +659,13 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <h4>Hover</h4>
                                 </div>
+                                <div class='size-name'>Hover</div>
                             </div>
                         </div>
-                        <div clas='component-state'>
-                            <h3>Vertical</h3>
-                            <div class='component-sub-states-wrapper'>
-                                <div class='component-sub-state'>
+                        <div class='variants-wrapper'>
+                            <div class='variants-component-wrapper'>
+                                <div class='variant-component'>
                                     <div class='grabber-wrapper vertical is-normal'>
                                         <div class='grabber-handle cursor-grab'>
                                             <div class='grabber-dots'>
@@ -660,9 +675,14 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <h4>Normal</h4>
                                 </div>
-                                <div class='component-sub-state'>
+                                <div class='size-name'>Normal</div>
+                            </div>
+                        </div>
+                   
+                        <div class='variants-wrapper'>
+                            <div class='variants-component-wrapper'>
+                                <div class='variant-component'>
                                     <div class='grabber-wrapper vertical is-hover'>
                                         <div class='grabber-handle cursor-grab'>
                                             <div class='grabber-dots'>
@@ -672,11 +692,10 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <h4>Hover</h4>
                                 </div>
+                                <div class='size-name'>Hover</div>
                             </div>
                         </div>
-                    
                       
                     </div>
                     <div class="markup">
@@ -1110,31 +1129,44 @@
                     Vestibulum tristique molestie ex, sed tincidunt diam egestas eu. Pellentesque bibendum, nulla auctor finibus dictum, arcu urna efficitur risus, in lacinia turpis nibh maximus lorem.
                   </p>
                   <div class="showComponentWrap-element">
-                   <div class="pv-message-center error">
-                           <div class="icon-container-medium">
-                                  <img src="../img/info.png" />
-                           </div>
-                           <div class="message">Something went wrong. Please try again</div>
-                   </div>
-                   <br/><br/>
-                   <div class="pv-message-center success">
-                          <div class="icon-container-medium">
-                                  <img src="../img/check.png" />
-                          </div>
-                          <div class="message">File created successfully</div>
-                          </div>
+                    <div class='variants-wrapper'>
+                        <div class='variants-component-wrapper'>
+                            <div class='variant-component'>
+                                <div class="pv-message-center success">
+                                    <div class="icon-container-medium">
+                                            <img src="../img/check.png" />
+                                    </div>
+                                    <div class="message">File created successfully</div>
+                                </div>
+                            </div>
+                            <div class='size-name'>Success</div>
+                        </div>
+                    </div>
+                    <div class='variants-wrapper'>
+                        <div class='variants-component-wrapper'>
+                            <div class='variant-component'>
+                                <div class="pv-message-center error">
+                                    <div class="icon-container-medium">
+                                        <img src="../img/info.png" />
+                                    </div>
+                                    <div class="message">Something went wrong. Please try again</div>
+                                    </div>
+                            </div>
+                            <div class='size-name'>Error</div>
+                        </div>
+                    </div>
                   </div>
                   
                   <!-- <h3 class="article-subtitle">Markup</h3>      -->
                   <div class="markup">
-            <xmp>
-            <div class="pv-message-center">
-            <div class="icon-container-medium">
-                  <img src="../img/info.png" />
-            </div>
-            <div class="message">Something went wrong. Please try again</div>
-            </div>
-            </xmp>
+                        <xmp>
+                        <div class="pv-message-center">
+                        <div class="icon-container-medium">
+                            <img src="../img/info.png" />
+                        </div>
+                        <div class="message">Something went wrong. Please try again</div>
+                        </div>
+                        </xmp>
                   </div>
               
               </div>
@@ -1243,54 +1275,52 @@
                     Vestibulum tristique molestie ex, sed tincidunt diam egestas eu. Pellentesque bibendum, nulla auctor finibus dictum, arcu urna efficitur risus, in lacinia turpis nibh maximus lorem.
                   </p>
                   <div class="showComponentWrap-element">
-                        <div class='component-sizes'>
-                            <h3>Types</h3>
-                            <div class='variants-wrapper'>
-                                <div class='variants-component-wrapper'>
-                                    <div class='variant-component'>
-                                       <div class='progress-bar-wrapper'>
-                                            <div class='progress-bar-background'>
-                                                <div class='progress-bar-foreground'>
-                                                    <div class='progress-bar-foreground-bars'>
-                                                        <div class='pb pb-w-30 pb-green'></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                       </div>
-                                    </div>
-                                    <div class='variant-component'>
-                                        <div class='progress-bar-wrapper'>
-                                            <div class='progress-bar-background'>
-                                                <div class='progress-bar-foreground'>
-                                                    <div class='progress-bar-foreground-bars'>
-                                                        <div class='pb pb-w-20 pb-green'></div>
-                                                        <div class='pb pb-w-30 pb-yellow'></div>
-                                                        <div class='pb pb-w-10 pb-blue'></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                    <div class='variants-wrapper'>
+                        <div class='variants-component-wrapper'>
+                            <div class='variant-component'>
+                                <div class='progress-bar-wrapper'>
+                                     <div class='progress-bar-background'>
+                                         <div class='progress-bar-foreground'>
+                                             <div class='progress-bar-foreground-bars'>
+                                                 <div class='pb pb-w-30 pb-green'></div>
+                                             </div>
+                                         </div>
                                      </div>
-                                    <div class='size-name'>Regular</div>
                                 </div>
-                            </div>
-                            <div class='variants-wrapper'>
-                                <div class='variants-component-wrapper'>
-                                    <div class='variant-component inverse-variant'>
-                                        <div class='progress-bar-wrapper inverse'>
-                                            <div class='progress-bar-background'>
-                                                <div class='progress-bar-foreground'>
-                                                    <div class='progress-bar-foreground-bars'>
-                                                        <div class='pb pb-w-20 pb-white'></div>
-                                                    </div>
-                                                </div>
+                             </div>
+                             <div class='variant-component'>
+                                 <div class='progress-bar-wrapper'>
+                                     <div class='progress-bar-background'>
+                                         <div class='progress-bar-foreground'>
+                                             <div class='progress-bar-foreground-bars'>
+                                                 <div class='pb pb-w-20 pb-green'></div>
+                                                 <div class='pb pb-w-30 pb-yellow'></div>
+                                                 <div class='pb pb-w-10 pb-blue'></div>
+                                             </div>
+                                         </div>
+                                     </div>
+                                 </div>
+                              </div>
+                            <div class='size-name'>Regular</div>
+                        </div>
+                    </div>
+                    <div class='variants-wrapper'>
+                        <div class='variants-component-wrapper'>
+                            <div class='variant-component inverse-variant'>
+                                <div class='progress-bar-wrapper inverse'>
+                                    <div class='progress-bar-background'>
+                                        <div class='progress-bar-foreground'>
+                                            <div class='progress-bar-foreground-bars'>
+                                                <div class='pb pb-w-20 pb-white'></div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class='size-name'>Inverse</div>
                                 </div>
                             </div>
+                            <div class='size-name'>Inverse</div>
                         </div>
+                    </div>
+                        
                   </div>
                   <div class="markup">
                         <xmp>
@@ -1400,21 +1430,30 @@
                     Vestibulum tristique molestie ex, sed tincidunt diam egestas eu. Pellentesque bibendum, nulla auctor finibus dictum, arcu urna efficitur risus, in lacinia turpis nibh maximus lorem.
                   </p>
                   <div class="showComponentWrap-element">
-            
-                          <div class="switch-wrapper">
-                                  <div class="switch-status-text">On</div>
-                                  <div class="switch-button">
-                                          <div class="switch-knob"></div>
-                                  </div>
-                          </div>
-            
-                          <div class="switch-wrapper off">
-                                  <div class="switch-status-text">Off</div>
-                                  <div class="switch-button">
-                                          <div class="switch-knob"></div>
-                                  </div>
-                          </div>
-                   
+                        <div class='variants-wrapper'>
+                            <div class='variants-component-wrapper'>
+                                <div class='variant-component'>
+                                    <div class="switch-wrapper">
+                                        <div class="switch-status-text">On</div>
+                                        <div class="switch-button">
+                                                <div class="switch-knob"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class='variants-wrapper'>
+                            <div class='variants-component-wrapper'>
+                                <div class='variant-component'>
+                                    <div class="switch-wrapper off">
+                                        <div class="switch-status-text">Off</div>
+                                        <div class="switch-button">
+                                                <div class="switch-knob"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                   </div>
                   
                           
@@ -1519,9 +1558,15 @@
                     Vestibulum tristique molestie ex, sed tincidunt diam egestas eu. Pellentesque bibendum, nulla auctor finibus dictum, arcu urna efficitur risus, in lacinia turpis nibh maximus lorem.
                   </p>
                   <div class="showComponentWrap-element">
-                          <span class="tag red">Product development</span>
-                          <span class="tag green">Accounts</span>
-                          <span class="tag blue">Translators</span>
+                          <div class='variants-wrapper'>
+                            <div class='variants-component-wrapper'>
+                                <div class='variant-component'>
+                                    <span class="tag red">Product development</span>
+                                    <span class="tag green">Accounts</span>
+                                    <span class="tag blue">Translators</span>
+                                </div>
+                            </div>
+                        </div>
                   </div>
                   
                           
@@ -1571,49 +1616,62 @@
                     Vestibulum tristique molestie ex, sed tincidunt diam egestas eu. Pellentesque bibendum, nulla auctor finibus dictum, arcu urna efficitur risus, in lacinia turpis nibh maximus lorem.
                   </p>
                   <div class="showComponentWrap-element">
-                          <h3>Left</h3>
-                          <div class='tooltip-wrapper'>
-                                  <div class='tooltip-caret right'></div>
-                                  <div class='tooltip-body'>
-                                          User experience (UX) design is the process design teams use to create products that provide 
-                                          meaningful and relevant experiences to users.
-                                  </div>
-                          </div>  
-                  </div>
-            
-                  <div class="showComponentWrap-element">
-                          <h3>Right</h3>
-                          <div class='tooltip-wrapper'>
-                                  <div class='tooltip-caret left'></div>
-                                  <div class='tooltip-body'>
-                                          User experience (UX) design is the process design teams use to create products that provide 
-                                          meaningful and relevant experiences to users.
-                                  </div>
-                          </div>  
-                  </div>
-            
-                  <div class="showComponentWrap-element">
-                          <h3>Top</h3>
-                          <div class='tooltip-wrapper'>
-                                  <div class='tooltip-caret top'></div>
-                                  <div class='tooltip-body'>
-                                          User experience (UX) design is the process design teams use to create products that provide 
-                                          meaningful and relevant experiences to users.
-                                  </div>
-                          </div>  
-                  </div>
-            
-                  <div class="showComponentWrap-element">
-                          <h3>Bottom</h3>
-                          <div class='tooltip-wrapper'>
-                                  <div class='tooltip-caret bottom'></div>
-                                  <div class='tooltip-body'>
-                                          User experience (UX) design is the process design teams use to create products that provide 
-                                          meaningful and relevant experiences to users.
-                                  </div>
-                          </div>  
-                  </div>
-                  
+                    <div class='variants-wrapper'>
+                        <div class='variants-component-wrapper'>
+                            <div class='variant-component'>
+                                <div class='tooltip-wrapper'>
+                                    <div class='tooltip-caret left'></div>
+                                    <div class='tooltip-body'>
+                                            User experience (UX) design is the process design teams use to create products that provide 
+                                            meaningful and relevant experiences to users.
+                                    </div>
+                                 </div>   
+                            </div>
+                            <div class='size-name'>Left</div>
+                        </div>
+                    </div>
+                    <div class='variants-wrapper'>
+                        <div class='variants-component-wrapper'>
+                            <div class='variant-component'>
+                                <div class='tooltip-wrapper'>
+                                    <div class='tooltip-caret right'></div>
+                                    <div class='tooltip-body'>
+                                            User experience (UX) design is the process design teams use to create products that provide 
+                                            meaningful and relevant experiences to users.
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class='size-name'>Right</div>
+                        </div>
+                    </div>
+                    <div class='variants-wrapper'>
+                        <div class='variants-component-wrapper'>
+                            <div class='variant-component'>
+                                <div class='tooltip-wrapper'>
+                                    <div class='tooltip-caret top'></div>
+                                    <div class='tooltip-body'>
+                                            User experience (UX) design is the process design teams use to create products that provide 
+                                            meaningful and relevant experiences to users.
+                                    </div>
+                                 </div>  
+                            </div>
+                            <div class='size-name'>Top</div>
+                        </div>
+                    </div>
+                    <div class='variants-wrapper'>
+                        <div class='variants-component-wrapper'>
+                            <div class='variant-component'>
+                                <div class='tooltip-wrapper'>
+                                    <div class='tooltip-caret bottom'></div>
+                                    <div class='tooltip-body'>
+                                            User experience (UX) design is the process design teams use to create products that provide 
+                                            meaningful and relevant experiences to users.
+                                    </div>
+                                 </div>  
+                            </div>
+                            <div class='size-name'>Bottom</div>
+                        </div>
+                    </div>
                           
                   <div class="markup">
             
