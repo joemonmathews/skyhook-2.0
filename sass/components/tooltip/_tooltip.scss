@@ -8,19 +8,6 @@ $caret-alignment-positon: calc(50% - #{$caret-size});
 $caret-direction-position: -$caret-size - $caret-size/2;
 $caret-border: $caret-size solid $pv-navy;
 
-.tooltip-wrapper {
-    position: relative;
-    max-width: 300px;
-    line-height: normal;
-}
-
-.tooltip-body {
-    background-color: $pv-navy;
-    border-radius: $base-border-radius;
-    color: $pv-white;
-    padding: map-get($pv-spaces, small);
-    position: relative;
-}
 @mixin tooltip-arrow() {
     width: 0; 
     height: 0; 
@@ -30,7 +17,6 @@ $caret-border: $caret-size solid $pv-navy;
     border-right: $caret-size solid transparent; 
     position: absolute;
 }
-
 
 @mixin tooltip-left(){
     border-right: $caret-border;
@@ -56,18 +42,33 @@ $caret-border: $caret-size solid $pv-navy;
     bottom: $caret-direction-position;
 }
 
-.tooltip-caret {
-    @include tooltip-arrow();
-    &.right {
-        @include tooltip-left();
-    }
-    &.left {
-        @include tooltip-right();
-    }
-    &.top {
-        @include tooltip-bottom();
-    }
-    &.bottom {
-        @include tooltip-top();
+
+
+.tooltip-wrapper {
+    position: relative;
+    max-width: 300px;
+    line-height: normal;
+    background-color: $pv-navy;
+    border-radius: $base-border-radius;
+    color: $pv-white;
+    padding: map-get($pv-spaces, small);
+    position: relative;
+
+    .pointer {
+        @include tooltip-arrow();
+        &.right {
+            @include tooltip-left();
+        }
+        &.left {
+            @include tooltip-right();
+        }
+        &.top {
+            @include tooltip-bottom();
+        }
+        &.bottom {
+            @include tooltip-top();
+        }
     }
 }
+
+

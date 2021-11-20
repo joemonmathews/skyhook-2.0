@@ -1,0 +1,39 @@
+@import "../../utilities/utilities/sizes";
+@import "../../utilities/style/textStyles";
+@import "../../utilities/utilities/borders";
+@import "../../utilities/utilities/shadows";
+@import "../../utilities/utilities/spaces";
+@import "../../utilities/style/colors";
+
+
+
+
+.toggle-wrapper {
+    height: map-get($pv-sizes, small);
+    width: auto;
+    display: flex;
+    border-radius: $base-border-radius;
+
+    .pv-button-naked {
+        height: map-get($pv-sizes, small);
+        width: map-get($pv-sizes, small);
+        background-color: $pv-grayscale-6;
+
+        &:first-child {
+            border-top-left-radius: $base-border-radius;
+            border-bottom-left-radius: $base-border-radius;
+        }
+        &:last-child {
+            border-top-right-radius: $base-border-radius;
+            border-bottom-right-radius: $base-border-radius;
+        }
+        &.is-active {
+            background-color: $pv-white;
+        }
+        
+    }
+    
+
+}
+
+

@@ -16,11 +16,13 @@ $dropdown-menu-min-height: map-get($pv-sizes, small);
 
 .dropdown-menu {
   // display: none;
-  min-width: $dropdown-menu-min-width;
-  // position: absolute;
+ position: absolute;
   // top: 100%;
   @include box-shadow-regular();
   z-index:98; // #todo
+  min-width: $dropdown-menu-min-width;
+  max-width: $dropdown-menu-max-width;
+
 
   .dropdown-list {
     display: block;
@@ -44,6 +46,21 @@ $dropdown-menu-min-height: map-get($pv-sizes, small);
       background-color: transparent;
     }
 
+    &.is-delimiter {
+      line-height: map-get($pv-sizes, small);
+      width: 100%;
+      background-color: $pv-grayscale-6;
+      padding-left: map-get($pv-spaces, small);
+      padding-right: 0;
+      display: flex;
+      justify-content: space-between;
+  
+      &:hover {
+        cursor: pointer;
+      }
+  
+    }
+
   }
 
   .divider {
@@ -56,6 +73,8 @@ $dropdown-menu-min-height: map-get($pv-sizes, small);
   .has-filter {
     padding: map-get($pv-spaces, small);
   }
+
+
 
 }
 
