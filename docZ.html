@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../sass/build/pvds.css" />
     <link rel="stylesheet" href="../css/doc.css" />
     <link rel="icon" href="images/favicon.png" />
+    <link href="prism-highlight/prism.css" rel="stylesheet" />
+
   </head>
 
   <body>
@@ -43,18 +45,18 @@
                     <dd><a href="#input">Input</a></dd>
                     <!-- <dd><a href="#input-number">Input number</a></dd>
                     <dd><a href="#input-time">Input time</a></dd> -->
-                    <dd><a href="#message-center">Message center</a></dd>
+                    <dd><a href="#messagecenter">Message center</a></dd>
                     <dd><a href="#modal">Modal</a></dd>
-                    <dd><a href="#overlay-background">Overlay background</a></dd>
+                    <dd><a href="#overlaybackground">Overlay background</a></dd>
                     <dd><a href="#popover">Popover</a></dd>
-                    <dd><a href="#progress-bar">Progress bar</a></dd>
+                    <dd><a href="#progressbar">Progress bar</a></dd>
                     <dd><a href="#radio">Radio</a></dd>
                     <dd><a href="#spinner">Spinner</a></dd>
                     <dd><a href="#switch">Switch</a></dd>
                     <dd><a href="#tab-group">Tab group</a></dd>
                     <dd><a href="#table">Table</a></dd>
                     <dd><a href="#tag">Tag</a></dd>
-                    <dd><a href="#text-area">Text area</a></dd>
+                    <dd><a href="#textarea">Text area</a></dd>
                     <dd><a href="#text-editor">Text editor</a></dd>
                     <dd><a href="#toggle">Toggle</a></dd>
                     <dd><a href="#tooltip">Tooltip</a></dd>
@@ -131,21 +133,24 @@
                     </div>
                    </div>
                    <div class="markup">
-                            <xmp>
-                            
-                            <figure class="avatar avatar-small">
-                                <img src="../img/a.jpg" alt="...">
-                            </figure>
-                            
-                            <figure class="avatar avatar-medium">
-                                <img src="../img/b.jpg" alt="...">
-                            </figure>
-                            
-                            <figure class="avatar avatar-large">
-                                <img src="../img/c.jpg" alt="...">
-                            </figure>
-                            </xmp>
-                        </div>
+                        <pre>
+                            <code class="language-html">
+                                <script type="prism-html-markup">
+                                    <figure class="avatar avatar-small">
+                                        <img src="../img/a.jpg" alt="...">
+                                    </figure>
+                                    
+                                    <figure class="avatar avatar-medium">
+                                        <img src="../img/b.jpg" alt="...">
+                                    </figure>
+                                    
+                                    <figure class="avatar avatar-large">
+                                        <img src="../img/c.jpg" alt="...">
+                                    </figure>
+                                </script>
+                            </code>
+                        </pre>
+                    </div>
                   </div>
             </section>
             <!-- / avatar  -->
@@ -166,11 +171,15 @@
                     </div>
                     <!-- <h3 class="article-subtitle">Markup</h3> -->
                     <div class="markup">
-            <xmp>
-            <div class="pv-badge-wrap">
-                <div class="pv-badge">Badge</div>
-            </div>
-            </xmp>
+                        <pre>
+                            <code class="language-html">
+                                <script type="prism-html-markup">
+                                    <div class="pv-badge-wrap">
+                                        <div class="pv-badge">Badge</div>
+                                    </div>
+                                </script>
+                            </code>
+                        </pre>
                     </div>
             
                 </div>
@@ -354,9 +363,13 @@
                   </div>
                   <div class="markup">
                    
-                            <xmp>
-            
-                            </xmp>
+                    <pre>
+                        <code class="language-html">
+                            <script type="prism-html-markup">
+                               
+                            </script>
+                        </code>
+                    </pre>
                   </div>
               
               </div>
@@ -1268,7 +1281,7 @@
             <!-- /popover -->
             
             <section class="styles-container">
-                <a name="#progress-bar"></a>
+                <a name="progressbar"></a>
                 <div class="showComponentWrap">
                   <h1 class="article-title">Progress bar</h1>
                   <p>
@@ -1333,7 +1346,7 @@
             
             
             <section class="styles-container">
-                <a name="#spinner"></a>
+                <a name="spinner"></a>
                 <div class="showComponentWrap">
                   <h1 class="article-title">Spinner</h1>
                   <p>
@@ -1689,6 +1702,7 @@
 </div>
 
 <script src="js/scripts.js"></script>
+<script src="prism-highlight/prism.js"></script>
 
 </body>
 
