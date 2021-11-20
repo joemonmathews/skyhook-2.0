@@ -17,7 +17,7 @@
     background-color: $pv-white;
     resize: none;
     text-align: left;
-    @include border-normal();
+    border: 1px solid $pv-grayscale-3;
 
     &.is-focused, .is-focus-selected {
         @include focus();
