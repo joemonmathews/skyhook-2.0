@@ -255,6 +255,9 @@ p {
 .fieldWrap {
     margin-bottom: 20px;
 }
+.pv-message-center {
+    margin-bottom: 46px;
+}
 
 .component-states-wrapper {
     border: 1px solid red;  
