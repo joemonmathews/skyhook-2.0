@@ -1239,6 +1239,16 @@ input[type="checkbox"] {
   display: none;
 }
 
+/* -- Color green --  */
+/* -- Color blue --  */
+/* -- Color red --  */
+/* -- Color yellow --  */
+/* -- Color lilac --  */
+/* -- Color orange --  */
+/* -- Color grayscales --  */
+/* -- Color white --  */
+/* -- Color navy --  */
+/* -- Color navy --  */
 .circle-wrap {
   margin: 50px auto;
   width: 150px;
@@ -1261,7 +1271,7 @@ input[type="checkbox"] {
 
 .circle-wrap .circle .mask .fill {
   clip: rect(0px, 75px, 150px, 0px);
-  background-color: #9e00b1;
+  background-color: #8AB98E;
 }
 
 .circle-wrap .circle .mask .full {

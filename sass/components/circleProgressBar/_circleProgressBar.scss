@@ -1,4 +1,4 @@
-
+@import "../../utilities/style/colors";
 
 
 .circle-wrap {
@@ -21,7 +21,7 @@
         clip: rect(0px, 150px, 150px, 75px);
         .fill {
             clip: rect(0px, 75px, 150px, 0px);
-            background-color: #9e00b1;
+            background-color:$pv-green-regular;
           }
         .full {
             animation: fill ease-in-out 3s;
