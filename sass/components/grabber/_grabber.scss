@@ -2,6 +2,7 @@
 @import "../../utilities/style/textStyles";
 @import "../../utilities/utilities/sizes";
 @import "../../utilities/utilities/borders";
+@import "../../utilities/utilities/cursors";
 
 $dot-size: 3px;
 $handle-size: 7px;
@@ -71,4 +72,29 @@ $handle-size: 7px;
     height: $dot-size;
     border-radius: $border-radius;
 
+}
+
+// Improvements - can reduce the lines 
+
+.grabber {
+    background-color: $pv-grayscale-5;
+    cursor: cursor-grab;
+
+    &.horizontal {
+        width: 100%;
+        height: $handle-size;
+
+        &:hover {
+            background-color: $pv-green-regular;
+        }
+    }
+
+    &.vertical {
+        width: $handle-size;
+        height: 100%;
+
+        &:hover {
+            background-color: $pv-green-regular;
+        }
+    }
 }

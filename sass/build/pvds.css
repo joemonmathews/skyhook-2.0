@@ -1666,6 +1666,42 @@ input[type="checkbox"] {
   border-color: #D56261;
 }
 
+.cursor-default, .input[disabled]:hover, .input[disabled]:focus, .input[disabled]:active {
+  cursor: pointer;
+}
+
+.cursor-pointer, .pv-button-primary, .pv-button-destructive, .pv-button-naked, .pv-button-naked-inverse, .pv-button-ghost, .fieldWrap {
+  cursor: pointer;
+}
+
+.cursor-grab {
+  cursor: pointer;
+}
+
+.cursor-grabbing {
+  cursor: pointer;
+}
+
+.cursor-resize {
+  cursor: pointer;
+}
+
+.cursor-column-resize {
+  cursor: pointer;
+}
+
+.cursor-move {
+  cursor: pointer;
+}
+
+.cursor-not-allowed {
+  cursor: pointer;
+}
+
+.cursor-text {
+  cursor: pointer;
+}
+
 .grabber-wrapper.horizontal {
   width: 46px;
 }
@@ -1755,6 +1791,29 @@ input[type="checkbox"] {
   width: 3px;
   height: 3px;
   border-radius: 50%;
+}
+
+.grabber {
+  background-color: #DDDDDD;
+  cursor: cursor-grab;
+}
+
+.grabber.horizontal {
+  width: 100%;
+  height: 7px;
+}
+
+.grabber.horizontal:hover {
+  background-color: #8AB98E;
+}
+
+.grabber.vertical {
+  width: 7px;
+  height: 100%;
+}
+
+.grabber.vertical:hover {
+  background-color: #8AB98E;
 }
 
 /* -- Color green --  */
