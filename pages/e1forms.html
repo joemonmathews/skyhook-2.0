@@ -17,7 +17,7 @@
         <div class="modal" id="modal">
                 <div class="modal-container large">
                         <div class="modal-header">
-                        <h1>Change Point</h1>
+                        <h1>Edit workspace fields</h1>
                         <span></span>
                         </div>
                         <div class="modal-body">
@@ -73,22 +73,51 @@
                                                     <div class="form-field">
                                                         <div class="form-label">
                                                             <label for="name">
-                                                                Cap Auth ID
+                                                                Priority
                                                             </label>
                                                         </div>
                                                         <div class="form-input">
-                                                            <input type="text" id="name" name="name" placeholder="Enter Auth ID"  class="input">
+                                                            <button class="pv-button-ghost" style="width: 320px;display: flex;
+                                                            justify-content: space-between;">
+                                                                <span>
+                                                                    High
+                                                                </span>
+                                                                <span>
+                                                                    <svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                                                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                                                            <g id="UI-Kit/icon/small" fill="#999999" fill-rule="nonzero">
+                                                                                <g id="caret-down">
+                                                                                    <path d="M3.64788065,6.41953733 L7.67749235,10.2549509 C7.8574888,10.4284679 8.1425112,10.4284679 8.32250765,10.2549509 L12.3521193,6.41953733 C12.4930128,6.28822295 12.5382987,6.08360447 12.465974,5.90510082 C12.3936492,5.72659718 12.2187056,5.61120965 12.0261439,5.61500212 L3.97385613,5.61500212 C3.78129435,5.61120965 3.60635075,5.72659718 3.534026,5.90510082 C3.46170125,6.08360447 3.50698724,6.28822295 3.64788065,6.41953733 Z"></path>
+                                                                                </g>
+                                                                            </g>
+                                                                        </g>
+                                                                    </svg>
+                                                                </span>
+                                                            </button>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class='form-pair-wrapper'>
+                                                    <div class="form-field">
+                                                        <div class="form-label">
+                                                            <label for="name">
+                                                                Description
+                                                            </label>
+                                                        </div>
+                                                        <div class="form-input">
+                                                            <textarea  class="textarea"></textarea>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class='form-section'>
-                                                <h1 class='form-header'>Status fields</h1>
+                                                <!-- <h1 class='form-header'>Status fields</h1> -->
                                                 <div class='form-pair-wrapper'>
                                                     <div class="form-field">
                                                         <div class="form-label">
                                                             <label for="name">
-                                                                Cap Auth ID
+                                                                04.decimal
                                                             </label>
                                                         </div>
                                                         <div class="form-input">
@@ -98,7 +127,7 @@
                                                     <div class="form-field">
                                                         <div class="form-label">
                                                             <label for="name">
-                                                                Budget
+                                                                08.picklist single select
                                                             </label>
                                                         </div>
                                                         <div class="form-input">
@@ -110,7 +139,7 @@
                                                     <div class="form-field">
                                                         <div class="form-label">
                                                             <label for="name">
-                                                                Planned start date
+                                                                12.textshot
                                                             </label>
                                                         </div>
                                                         <div class="form-input">
@@ -120,7 +149,7 @@
                                                     <div class="form-field">
                                                         <div class="form-label">
                                                             <label for="name">
-                                                                Planned finish date
+                                                                16.yesno picklist
                                                             </label>
                                                         </div>
                                                         <div class="form-input">
@@ -152,12 +181,14 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class='form-section'>
+                                                <h1 class='form-header'>Status fields</h1>
                                         </div>
                                     </div>
                         </div>
                         <div class="modal-footer">
                                 <button class="pv-button-naked">Cancel</button>
-                                <button class="pv-button-primary">Submit</button>
+                                <button class="pv-button-primary">Save changes</button>
                         </div>
                 </div>
         </div>
